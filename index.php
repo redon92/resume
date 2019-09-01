@@ -117,7 +117,7 @@
 								<div class="photo-profile">
 									<img src="images/me.jpg" alt="Redon Lacaj">
 								</div>
-								<a href="cv/Redon_Lacaj_CV_oct.pdf" target="cv">
+								<a href="cv/CV_Redon_Lacaj_5.pdf" target="cv">
 									<div class="download-resume">
 										<i class="fa fa-cloud-download" aria-hidden="true"></i>
 										<span class="text-download">DOWNLOAD CV</span>
