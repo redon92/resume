@@ -223,10 +223,10 @@
 								<div class="skill">
 									<div class="title-progress">
 										<span class="skill-name">Laravel</span>
-										<span class="skill-value">50%</span>
+										<span class="skill-value">60%</span>
 									</div>
 									<div class="progress">
-									 	<div class="progress-bar progress3" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
+									 	<div class="progress-bar progress3" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
 									    </div>
 									</div>
 								</div>
@@ -234,11 +234,11 @@
 								<!-- single skill -->
 								<div class="skill">
 									<div class="title-progress">
-										<span class="skill-name">PHP</span>
-										<span class="skill-value">50%</span>
+										<span class="skill-name">Vue.js</span>
+										<span class="skill-value">40%</span>
 									</div>
 									<div class="progress">
-									 	<div class="progress-bar progress4" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
+									 	<div class="progress-bar progress4" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
 									    </div>
 									</div>
 								</div>
@@ -246,11 +246,11 @@
 								<!-- single skill -->
 								<div class="skill">
 									<div class="title-progress">
-										<span class="skill-name">Javascript</span>
-										<span class="skill-value">80%</span>
+										<span class="skill-name">Node.js</span>
+										<span class="skill-value">25%</span>
 									</div>
 									<div class="progress">
-									 	<div class="progress-bar progress5" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+									 	<div class="progress-bar progress5" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 25%;">
 									    </div>
 									</div>
 								</div>
@@ -490,17 +490,30 @@
 								<!-- / single experience -->
 								
 								<div class="experience-content">
-									<span class="period-experience">Mar 2018 - Current</span>
+									<span class="period-experience">Feb 2019 - Current</span>
+									<h3 class="specialty-name">Web Developer FS</h3>
+									<h3 class="company-name">Angel1</h3>
+									<p class="prg-experience">-Laravel web development.
+										</br>
+										-Vanilla OOP PHP development.
+										</br>
+										-Front-End development with Vue.js
+										</br>
+										-Multiple projects including Consulting webpage, live gym statistics, challenges, etc.
+									</p>
+								</div>
+								<!-- / single experience -->
+								
+								<div class="experience-content">
+									<span class="period-experience">Mar 2018 - Sep 2018</span>
 									<h3 class="specialty-name">Web Developer FS</h3>
 									<h3 class="company-name">CCL Albania</h3>
-									<p class="prg-experience">-Backend development with Laravel.
-									</br>
-								-Vanilla OOP PHP development.
-								</br>
-								-Front-End development with Angular, Bootstrap 
-								</br>
-								-Multiple projects including cryptocurrencies, ebooks, leads management system.
-								</p>
+									<p class="prg-experience">-Laravel web development.
+										</br>
+										-Vanilla OOP PHP development.
+										</br>
+										-Multiple projects including cryptocurrencies, ebooks, leads management system.
+									</p>
 								</div>
 								<!-- / single experience -->
 								
