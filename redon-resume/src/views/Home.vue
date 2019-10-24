@@ -286,18 +286,18 @@
 				    </div>
 				</section>
 
-<!--				<section class="section section-contact-us wow fadeInUp">-->
-<!--					<div class="header-section">-->
-<!--						<h2 class="h2-section">GRAPH</h2>-->
-<!--					</div>-->
-<!--					<div class="row">-->
-<!--						<div class="">-->
-<!--							<div class="">-->
-<!--								<expChart style="height: 500px"/>-->
-<!--							</div>-->
-<!--						</div>-->
-<!--					</div>-->
-<!--				</section>-->
+				<section class="section section-contact-us wow fadeInUp">
+					<div class="header-section">
+						<h2 class="h2-section">GRAPH</h2>
+					</div>
+					<div class="row">
+						<div class="">
+							<div class="">
+								<expChart style="height: 500px"/>
+							</div>
+						</div>
+					</div>
+				</section>
 				
 				<!-- #CONTACT_ME# -->
 				<section id="contact-us" class="section section-contact-us wow fadeInUp" data-wow-offset="40">
