@@ -35,53 +35,23 @@
 
 				</div>
 			</div>
-			<!-- #THEME-OPTION# --> <!-- other colors : http://colorhunt.co/ -->
-			<!--<div class="theme-option">
-				<div class="change-theme">
-					<div class="light-dark-theme">
-						<ul>
-							<li class="light">
-								<h4>Light</h4>
-								<span data-value="css/colors/light.css"><i class="fa fa-check"></i></span>
-							</li>
-							<li class="dark">
-								<h4>Dark</h4>
-								<span data-value="css/colors/dark.css"><i class="fa fa-check"></i></span>
-							</li>
-						</ul>
-					</div>
-					<div class="colors-theme">
-						<h4>12 awesome colors</h4>
-						<ul>
-							<li class="color1"><span data-value="css/colors/color1-0487cc.css"><i class="fa fa-check"></i></span></li>
-							<li class="color2"><span data-value="css/colors/color2-f23a3a.css"><i class="fa fa-check"></i></span></li>
-							<li class="color3"><span data-value="css/colors/color3-2eac6d.css"><i class="fa fa-check"></i></span></li>
-							<li class="color4"><span data-value="css/colors/color4-f35b25.css"><i class="fa fa-check"></i></span></li>
-						</ul>
-						<ul>
-							<li class="color5"><span data-value="css/colors/color5-f6416c.css"><i class="fa fa-check"></i></span></li>
-							<li class="color6"><span data-value="css/colors/color6-ff9999.css"><i class="fa fa-check"></i></span></li>
-							<li class="color7"><span data-value="css/colors/color7-00adb5.css"><i class="fa fa-check"></i></span></li>
-							<li class="color8"><span data-value="css/colors/color8-00cf95c.css"><i class="fa fa-check"></i></span></li>
-						</ul>
-						<ul>
-							<li class="color9"><span data-value="css/colors/color9-827055.css"><i class="fa fa-check"></i></span></li>
-							<li class="color10"><span data-value="css/colors/color10-8200ff.css"><i class="fa fa-check"></i></span></li>
-							<li class="color11"><span data-value="css/colors/color11-e4c144.css"><i class="fa fa-check"></i></span></li>
-							<li class="color12"><span data-value="css/colors/color12-5457a6.css"><i class="fa fa-check"></i></span></li>
-						</ul>
-					</div>
-				</div>
-				<div class="open-theme">
-					<i class="fa fa-cogs"></i>
-				</div>
-			</div>-->
-			<!-- #SCROLL-TOP# -->
 			<div class="darkLight" data-tootik="dark/light">
-				<div class="toggle toggle--daynight">
-					<input type="checkbox"  v-model="theme" @change="changeTheme(theme)" id="toggle--daynight" class="toggle--checkbox">
-					<label class="toggle--btn" for="toggle--daynight"><span class="toggle--feature"></span></label>
-				</div>
+                <div class="toggleWrapper">
+                    <input type="checkbox" v-model="theme" @change="changeTheme(theme)" class="dn" id="dn"/>
+                    <label for="dn" class="toggle">
+                        <span class="toggle__handler">
+                          <span class="crater crater--1"></span>
+                          <span class="crater crater--2"></span>
+                          <span class="crater crater--3"></span>
+                        </span>
+                        <span class="star star--1"></span>
+                        <span class="star star--2"></span>
+                        <span class="star star--3"></span>
+                        <span class="star star--4"></span>
+                        <span class="star star--5"></span>
+                        <span class="star star--6"></span>
+                    </label>
+                </div>
 			</div>
 		  <div class="scroll-top" data-tootik="TOP" data-tootik-conf="invert no-arrow no-fading">
 			  <i class="fa fa-arrow-up"></i>
@@ -106,55 +76,46 @@
 							</div>
 							<div class="col-sm-8">
 								<div class="info-profile">
-									<h2><span>HI I'M</span> REDON LAÇAJ</h2>
-									<h3>Web Developer</h3>
-									<p>Hello! I’m Redon Laçaj. I'm a Web Developer with over 2 years of experience.
-									I have an in-depth knowledge in PHP, HTML5, CSS3, JavaScript (Vue.js), MYSQL. I currently work with Laravel and Wordpress, depending on the project. I'm also an electronic circuits designer, Arduino and ESP developer. I'm a fast learner, and I'm always willing to improve .</p>
+									<h2><span>HI I'M</span> {{person.name}}</h2>
+									<h3>{{person.profession}}</h3>
+									<p>{{person.about}}</p>
 									<div class="row">
 										<div class="col-sm-6">
 											<ul class="ul-info">
 												<li class="li-info">
 													<span class="title-info">Age</span>
-													<span class="info">26</span>
+													<span class="info">{{person.age}}</span>
 												</li>
 												<li class="li-info">
 													<span class="title-info">Address</span>
-													<span class="info">Tirana, Albania</span>
+													<span class="info">{{person.address}}</span>
 												</li>
 												<li class="li-info">
 													<span class="title-info">Email</span>
-													<span class="info">92redon@gmail.com</span>
+													<span class="info">{{person.email}}</span>
 												</li>
 											</ul>
 										</div>
 										<div class="col-sm-6">
 											<ul class="ul-info">
-											  <li class="li-info"> <span class="title-info">Phone</span> <span class="info">+355 67 22 66 112</span></li>
+											  <li class="li-info"> <span class="title-info">Phone</span> <span class="info">{{person.phone}}</span></li>
 											  <li class="li-info">
 													<span class="title-info">Website</span>
-												  <span class="info"><a href="">redon.al</a></span>
+												  <span class="info"><a href="">{{person.website}}</a></span>
 												</li>
 												<li class="li-info">
 													<span class="title-info">Nationality</span>
-													<span class="info">Albanian</span>
+													<span class="info">{{person.nationality}}</span>
 												</li>
 											</ul>
 										</div>
 										<div class="col-sm-12">
 											<span class="title-links">Social Links</span>
 											<ul class="ul-social-links">
-												<li class="li-social-links">
-													<a href="https://www.facebook.com/redvenger/" data-tootik="Facebook" data-tootik-conf="square"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+												<li class="li-social-links" v-for="social in person.social">
+													<a :href="social.url" :data-tootik="social.name" data-tootik-conf="square"><i :class="'fa fa-'+social.slug" aria-hidden="true"></i></a>
 												</li>
-												<li class="li-social-links">
-													<a href="https://plus.google.com/117470767662553758748" data-tootik="Google Plus" data-tootik-conf="square"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
-												</li>
-												<li class="li-social-links">
-													<a href="https://www.linkedin.com/in/redon-la%C3%A7aj-40188212b/" data-tootik="Linkedin" data-tootik-conf="square"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-												</li>
-												<li class="li-social-links">
-													<a href="https://www.instagram.com/redonl/" data-tootik="Instagram" data-tootik-conf="square"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-												</li>
+
 											</ul>
 										</div>
 									</div>
@@ -175,71 +136,13 @@
 									<h3>PROFESSIONAL SKILLS</h3>
 								</div>
 								<!-- single skill -->
-								<div class="skill">
+								<div class="skill" v-for="skill in person.skills.professional">
 									<div class="title-progress">
-										<span class="skill-name">HTML & CSS</span>
-										<span class="skill-value">80%</span>
+										<span class="skill-name">{{skill.name}}</span>
+										<span class="skill-value">{{skill.percentage}}</span>
 									</div>
 									<div class="progress">
-									 	<div class="progress-bar progress1" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 90%;">
-									    </div>
-									</div>
-								</div>
-								<!-- / single skill -->
-								<!-- single skill -->
-								<div class="skill">
-									<div class="title-progress">
-										<span class="skill-name">PHP</span>
-										<span class="skill-value">75%</span>
-									</div>
-									<div class="progress">
-									 	<div class="progress-bar progress2" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;">
-									    </div>
-									</div>
-								</div>
-								<!-- / single skill -->
-								<!-- single skill -->
-								<div class="skill">
-									<div class="title-progress">
-										<span class="skill-name">Laravel</span>
-										<span class="skill-value">60%</span>
-									</div>
-									<div class="progress">
-									 	<div class="progress-bar progress3" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-									    </div>
-									</div>
-								</div>
-								<!-- / single skill -->
-								<!-- single skill -->
-								<div class="skill">
-									<div class="title-progress">
-										<span class="skill-name">Vue.js</span>
-										<span class="skill-value">40%</span>
-									</div>
-									<div class="progress">
-									 	<div class="progress-bar progress4" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
-									    </div>
-									</div>
-								</div>
-								<!-- / single skill -->
-								<!-- single skill -->
-								<div class="skill">
-									<div class="title-progress">
-										<span class="skill-name">Node.js</span>
-										<span class="skill-value">25%</span>
-									</div>
-									<div class="progress">
-									 	<div class="progress-bar progress5" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 25%;">
-									    </div>
-									</div>
-								</div>
-								<div class="skill">
-									<div class="title-progress">
-										<span class="skill-name">Photoshop</span>
-										<span class="skill-value">80%</span>
-									</div>
-									<div class="progress">
-									 	<div class="progress-bar progress5" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
+									 	<div class="progress-bar progress1" role="progressbar" :aria-valuenow="skill.percentage" aria-valuemin="0" aria-valuemax="100" :style="'width: '+skill.percentage+'%;'">
 									    </div>
 									</div>
 								</div>
@@ -304,51 +207,12 @@
 								
 								<div class="other-skills">
 									<div class="row">
-										<div class="col-sm-6">
+										<div v-for="skill in person.skills.additional" class="col-sm-6">
 											<div class="other">
 												<!-- single other skill -->
-												<div class="skill">
+												<div  class="skill">
 													<i class="fa fa-check-square-o" aria-hidden="true"></i>
-													<span>MySQL</span>
-												</div>
-												<!-- / single other skill -->
-												<!-- single other skill -->
-												<div class="skill">
-													<i class="fa fa-check-square-o" aria-hidden="true"></i>
-													<span>RESTfull WS</span>
-												</div>
-												<!-- / single other skill -->
-												<!-- single other skill -->
-												<div class="skill">
-													<i class="fa fa-check-square-o" aria-hidden="true"></i>
-													<span>Bootstrap</span>
-												</div>
-												<div class="skill">
-													<i class="fa fa-check-square-o" aria-hidden="true"></i>
-													<span>Basic Android programming</span>
-												</div>
-												<!-- / single other skill -->
-											</div>
-										</div>
-										<div class="col-sm-6">
-											<div class="other">
-												<!-- single other skill -->
-												<div class="skill">
-													<i class="fa fa-check-square-o" aria-hidden="true"></i>
-													<span>Graphical Design</span>
-												</div>
-												<!-- / single other skill -->
-												<!-- single other skill -->
-												
-												<!-- / single other skill -->
-												<!-- single other skill -->
-												<div class="skill">
-													<i class="fa fa-check-square-o" aria-hidden="true"></i>
-													<span>Adobe Illustrator</span>
-												</div>
-												<div class="skill">
-													<i class="fa fa-check-square-o" aria-hidden="true"></i>
-													<span>Circuit Design (PCB)</span>
+													<span>{{skill}}</span>
 												</div>
 												<!-- / single other skill -->
 											</div>
@@ -365,113 +229,16 @@
 						<h2 class="h2-section">EDUCATION</h2>
 					</div>
 					<div class="row text-left">
-						<!-- single education -->
-						<div class="col-sm-4">
-							<div class="education-content">
-				            	<div class="period">
-				            		<h3>2014 - 2017</h3>
-				            	</div>
-				            	<ul class="ul-education">
-				            		<li class="li-specialty">
-				            			<div class="specialty">
-						            		<span class="education-icon"><i class="fa fa-file-text"></i></span>
-						            		<span class="specialty-name">Masters in Computer Science</span>
-						            	</div>
-				            		</li>
-				            		<li class="li-university">
-				            			<div class="university">
-						            		<span class="education-icon"><i class="fa fa-university"></i></span>
-						            		<span class="university-name">Epoka University</span>
-						            	</div>
-				            		</li>
-				            	</ul>
-				            	<p class="prg-education">Main Courses: Artificial Intelligence, Distributed Programming, Advanced Database Management Systems, Advanced Network Management, Microprocessors programming, Machine Learning
-								</p>
-				            </div>
-						</div>
-						<!-- / single education -->
-						<!-- single education -->
-						<div class="col-sm-4">
-							<div class="education-content">
-				            	<div class="period">
-				            		<h3>2011 - 2014</h3>
-				            	</div>
-				            	<ul class="ul-education">
-				            		<li class="li-specialty">
-				            			<div class="specialty">
-						            		<span class="education-icon"><i class="fa fa-file-text"></i></span>
-						            		<span class="specialty-name">Computer Engineering</span>
-						            	</div>
-				            		</li>
-				            		<li class="li-university">
-				            			<div class="university">
-						            		<span class="education-icon"><i class="fa fa-university"></i></span>
-						            		<span class="university-name">Epoka University</span>
-						            	</div>
-				            		</li>
-				            	</ul>
-								<p class="prg-education">Main courses:
-				            	Programming languages: C, C++, Java, HTML-CSS, JS, PHP, Python, Linux.
-				            	</br>Other courses: Database Management Systems, Networks Management, Digital Design, Computer Architecture.</br>
-								</p>
-				            </div>
-						</div>
-						<!-- / single education -->
-						<!-- single education -->
-						<div class="col-sm-4">
-							<div class="education-content">
-				            	<div class="period">
-				            		<h3>2007 - 2011</h3>
-				            	</div>
-				            	<ul class="ul-education">
-				            		<li class="li-specialty">
-				            			<div class="specialty">
-						            		<span class="education-icon"><i class="fa fa-file-text"></i></span>
-						            		<span class="specialty-name">Gymnasium</span>
-						            	</div>
-				            		</li>
-				            		<li class="li-university">
-				            			<div class="university">
-						            		<span class="education-icon"><i class="fa fa-university"></i></span>
-						            		<span class="university-name">Kolegji turk HRP</span>
-						            	</div>
-				            		</li>
-				            	</ul>
-				            	<p class="prg-education">General gymnasium courses, including advanced english classes, turkish and german classes. All lessons were conducted in english language.</p>
-				            </div>
-						</div>
-						<!-- / single education -->
-						<div class="clearfix"></div>
-						<!-- single education -->
-						<div class="col-sm-4"> </div>
-						<!-- / single education -->
-						<!-- single education -->
-					
-						<!-- / single education -->
-						<!-- single education -->
-						
-						<!-- / single education -->
+                        <education v-for="education in person.education" :education="education">
+                        </education>
 						<div class="clearfix"></div>
 					</div>
 				</section>
 				<!-- #EXPERIENCE# -->
-				<section id="experience" class="section section-experience wow fadeInUp" data-wow-offset="40">
-					<div class="header-section">
-						<h2 class="h2-section">EXPERIENCE</h2>
-					</div>
-					<div class="row">
-						<div class="col-md-10 col-md-offset-1">
-							<div class="all-experience">
-								
-								<!-- / single experience -->
-								
-								<experience v-for="experience in experiences" :resumeExp="{experience}"/>
-								<!-- / single experience -->
-								
-							</div>
-						</div>
-					</div>
-				</section>
+
+                <experiencesAll :resumeExp="{experiences:person.experiences}">
+
+                </experiencesAll>
 
 				<!-- #PORTFOLIO# -->
 				<section id="portfolio" class="section section-portfolio wow fadeInUp" data-wow-offset="40">
@@ -490,7 +257,7 @@
 					
 					<div class="row">
 						<!-- single work -->
-						<portfolio v-for="port in portfolio" :resumePort="{port}"/>
+						<portfolio v-for="port in person.portfolio" :resumePort="{port}"/>
 						
 						<div class="clearfix"></div>
 					</div>
@@ -508,41 +275,11 @@
 					<!-- more icons for interests : https://www.iconfinder.com/ -->
 				    <div class="swiper-container">
 				        <div class="swiper-wrapper">
-				            <div class="swiper-slide">
+				            <div class="swiper-slide" v-for="interest in person.interests">
 				            	<div>
-				            		<img src="images/interests/travel_icon.png" alt="Travel">
+				            		<img :src="'images/interests/'+interest.logo" :alt="interest.name">
 				            	</div>
-				            	<h4>Travel</h4>
-				            </div>
-				            <div class="swiper-slide">
-				            	<div>
-				            		<img src="images/interests/music_icon.png" alt="Music">
-				            	</div>
-				            	<h4>Music</h4>
-				            </div>
-				            <div class="swiper-slide">
-				            	<div>
-				            		<img src="images/interests/gaming_icon.png" alt="Gaming">
-				            	</div>
-				            	<h4>Gaming</h4>
-				            </div>
-				            <div class="swiper-slide">
-				            	<div>
-				            		<img src="images/interests/swiming_icon.png" alt="Swiming">
-				            	</div>
-				            	<h4>Swiming</h4>
-				            </div>
-				            <div class="swiper-slide">
-				            	<div>
-				            		<img src="images/interests/movies_icon.png" alt="Movies">
-				            	</div>
-				            	<h4>Movies</h4>
-				            </div>
-				            <div class="swiper-slide">
-				            	<div>
-				            		<img src="images/interests/bicycling_icon.png" alt="Bicycling">
-				            	</div>
-				            	<h4>Bicycling</h4>
+				            	<h4 class="text-capitalize">{{interest.name}}</h4>
 				            </div>
 				            
 				        </div>
@@ -627,164 +364,288 @@ $(function() {
 		    });
 		});
 // @ is an alias to /src
+import moment from 'moment';
 import HelloWorld from '@/components/HelloWorld.vue';
-import experience from '@/components/Experience.vue';
+import experiencesAll from '@/components/ExperiencesAll.vue';
 import portfolio from '@/components/Portfolio.vue';
 import expChart from '@/components/ExpChart.vue';
-
-
+import education from '@/components/Education.vue';
 
 export default {
   name: 'home',
   components: {
-    HelloWorld,
-    experience,
-  	portfolio,
-	  expChart
+      experiencesAll,
+      portfolio,
+      expChart,
+      education,
   },
   data(){
     return{
     	loading:true,
-		theme:true,
-      experiences:[
-        {
-          start:'Feb 2019',
-          end:'Current',
-          role:'Web Developer FS',
-          company:'Angel1',
-          tasks:[
-            '-Laravel web development',
-            '-Vanilla OOP PHP development',
-            '-Front-End development with Vue.js',
-            '-Multiple projects including Consulting webpage, live gym statistics, challenges, etc.'
-          ]
-        },
-        {
-          start:'Mar 2018',
-          end:'Sep 2018',
-          role:'Web Developer FS',
-          company:'CCL Albania',
-          tasks:[
-            '-Laravel web development',
-            '-Vanilla OOP PHP development',
-            '-Front-End development with Vue.js',
-            '-Multiple projects including cryptocurrencies, ebooks, leads management system.'
-          ]
-        },{
-          start:'Jul 2017',
-          end:'Jan 2018',
-          role:'IT Manager',
-          company:'Lacaj Sh.P.K',
-          tasks:[
-            '-Web Development.',
-            '-Technical Support.',
-            '-Logo and cards design.',
-          ]
-        },{
-          start:'Apr 2017',
-          end:'Jul 2017',
-          role:'Computer Engineer',
-          company:'First Group Albania - TAP Albania',
-          tasks:[
-            '-Developing the Fuel Management System for TAP Albania.',
-            '-Circuits design and development.',
-            '-Modifying the supplied android app to adapt with our project.',
-            '-Database management.',
-            '-Camera security system installation.',
-            '-Support.'
-          ]
-        },{
-          start:'Nov 2016',
-          end:'Apr 2017',
-          role:'IT Engineer',
-          company:'First Group Albania',
-          tasks:[
-            '-Web development.',
-            '-Network management.',
-            '-Helpdesk.',
-          ]
-        },{
-          start:'Dec 2015',
-          end:'Feb 2016',
-          role:'IT (Internship)',
-          company:'Epoka University',
-          tasks:[
-            '-Network management.',
-            '-Web development.',
-            '-Graphical design for events.',
-            '-Technical support',
-          ]
-        },{
-          start:'Nov 2013',
-          end:'Feb 2014',
-          role:'IT',
-          company:'TRONTECH',
-          tasks:[
-            '-Hardware technician.',
-            '-Web Development.',
-            '-Database Management.',
-          ]
-        },{
-          start:'Jun 2013',
-          end:'July 2013',
-          role:'Network Manager (Internship)',
-          company:'Albtelekom Sh. A.',
-          tasks:[
-            '- Network management.',
-          ]
-        },
-      ],
-      portfolio:[
-        {
-          	name:'Alpha Construction Team',
-			url:'http://alphaconstructionteam.com',
-			image:'alpha.jpg',
-			logo:'alpha_logo.png',
+		theme:false,
+		person:{
+			name:'REDON LAÇAJ',
+			profession:'Web Developer',
+			address:'Tirana, Albania',
+			email:'92redon@gmail.com',
+			phone:'+355 67 22 66 112',
+			nationality:'Albanian',
+			website:'redon.al',
+			websiteUrl:'http://redon.lacaj.al',
+			age:moment().diff('1992-09-10', 'years'),
+    		social:[
+                    {
+                        name:'Facebook',
+                        slug:'facebook',
+                        url:'https://www.facebook.com/redvenger/'
+                    },{
+                        name:'Google Plus',
+                        slug:'google-plus',
+                        url:'https://plus.google.com/117470767662553758748'
+                    },{
+                        name:'LinkedIn',
+                        slug:'linkedin',
+                        url:'https://www.linkedin.com/in/redon-la%C3%A7aj-40188212b/'
+                    },{
+                        name:'Instagram',
+                        slug:'instagram',
+                        url:'https://www.instagram.com/redonl/'
+                    },
+            ],
+			about:'Hello! I’m Redon Laçaj. I\'m a Web Developer with over 2 years of experience. ' +
+					'I have an in-depth knowledge in PHP, HTML5, CSS3, JavaScript (Vue.js), MYSQL. ' +
+					'I currently work with Laravel and Wordpress, depending on the project. ' +
+					'I\'m also an electronic circuits designer, Arduino and ESP developer. I\'m a fast learner, ' +
+					'and I\'m always willing to improve .',
+			skills:{
+			    professional:[
+                    {
+                        name:'HTML & CSS',
+                        percentage:'80',
+                    },{
+                        name:'PHP',
+                        percentage:'75',
+                    },{
+                        name:'Laravel',
+                        percentage:'60',
+                    },{
+                        name:'Vue.js',
+                        percentage:'40',
+                    },{
+                        name:'Node.js',
+                        percentage:'25',
+                    },{
+                        name:'Photoshop',
+                        percentage:'70',
+                    },
+                ],
+                additional:[
+                        'MySQL','RESTfull WS','Bootstrap','Graphical Design','Adobe Illustrator','Circuit Design (PCB)'
+                ],
+            },
+			education:[
+				{
+					start:'2014',
+					end:'2017',
+					institution:'Epoka University',
+					area:'Computer Science',
+					degree:'MSc',
+					courses:[
+						'Artificial Intelligence,' +
+						'Distributed Programming, ' +
+						'Advanced Database Management Systems, ' +
+						'Advanced Network Management, ' +
+						'Microprocessors programming, ' +
+						'Machine Learning',
+					],
 
-        },{
-          	name:'Selca Cem',
-			url:'http://selcacem.al',
-			image:'selca.jpg',
-			logo:'selca_logo.png',
+				},{
+					start:'2011',
+					end:'2014',
+					institution:'Epoka University',
+					area:'Computer Engineering',
+					degree:'Bachelor',
+					courses:[
+						'Main courses: Programming languages: C, C++, Java, HTML-CSS, JS, PHP, Python, Linux.<br>' +
+						'Other courses: Database Management Systems, Networks Management, Digital Design, Computer Architecture.'
+					],
 
-        },{
-          	name:'ZigZag (Coming soon)',
-			url:'http://zigzag.al',
-			image:'zigzag.jpg',
-			logo:'zigzag_logo.png',
+				},{
+					start:'2007',
+					end:'2011',
+					institution:'Kolegji turk HRP',
+					area:'Gymnasium',
+					degree:'',
+					courses:[
+						'General gymnasium courses, including advanced english classes, turkish and german classes. ' +
+						'<br>All lessons were conducted in english language.'
+					],
 
-        },{
-          	name:'2 Vellezerit Hoxha',
-			url:'http://2vellezerithoxha.com',
-			image:'2vhoxha.jpg',
-			logo:'2vhoxha_logo.png',
+				},
+			],
+			experiences:[
+				{
+					start:'Feb 2019',
+					end:'Current',
+					role:'Web Developer FS',
+					company:'Angel1',
+					tasks:[
+						'-Laravel web development',
+						'-Vanilla OOP PHP development',
+						'-Front-End development with Vue.js',
+						'-Multiple projects including Consulting webpage, live gym statistics, challenges, etc.'
+					]
+				},
+				{
+					start:'Mar 2018',
+					end:'Sep 2018',
+					role:'Web Developer FS',
+					company:'CCL Albania',
+					tasks:[
+						'-Laravel web development',
+						'-Vanilla OOP PHP development',
+						'-Front-End development with Vue.js',
+						'-Multiple projects including cryptocurrencies, ebooks, leads management system.'
+					]
+				},{
+					start:'Jul 2017',
+					end:'Jan 2018',
+					role:'IT Manager',
+					company:'Lacaj Sh.P.K',
+					tasks:[
+						'-Web Development.',
+						'-Technical Support.',
+						'-Logo and cards design.',
+					]
+				},{
+					start:'Apr 2017',
+					end:'Jul 2017',
+					role:'Computer Engineer',
+					company:'First Group Albania - TAP Albania',
+					tasks:[
+						'-Developing the Fuel Management System for TAP Albania.',
+						'-Circuits design and development.',
+						'-Modifying the supplied android app to adapt with our project.',
+						'-Database management.',
+						'-Camera security system installation.',
+						'-Support.'
+					]
+				},{
+					start:'Nov 2016',
+					end:'Apr 2017',
+					role:'IT Engineer',
+					company:'First Group Albania',
+					tasks:[
+						'-Web development.',
+						'-Network management.',
+						'-Helpdesk.',
+					]
+				},{
+					start:'Dec 2015',
+					end:'Feb 2016',
+					role:'IT (Internship)',
+					company:'Epoka University',
+					tasks:[
+						'-Network management.',
+						'-Web development.',
+						'-Graphical design for events.',
+						'-Technical support',
+					]
+				},{
+					start:'Nov 2013',
+					end:'Feb 2014',
+					role:'IT',
+					company:'TRONTECH',
+					tasks:[
+						'-Hardware technician.',
+						'-Web Development.',
+						'-Database Management.',
+					]
+				},{
+					start:'Jun 2013',
+					end:'July 2013',
+					role:'Network Manager (Internship)',
+					company:'Albtelekom Sh. A.',
+					tasks:[
+						'- Network management.',
+					]
+				},
+			],
+			portfolio:[
+				{
+					name:'Alpha Construction Team',
+					url:'http://alphaconstructionteam.com',
+					image:'alpha.jpg',
+					logo:'alpha_logo.png',
 
-        },{
-          	name:'Agrarja Anxhelo',
-			url:'http://agrarjaanxheloshpk.al',
-			image:'agrarja.jpg',
-			logo:'agrarja_logo.jpg',
+				},{
+					name:'Selca Cem',
+					url:'http://selcacem.al',
+					image:'selca.jpg',
+					logo:'selca_logo.png',
 
-        },{
-          	name:'NRD Sh.P.K.',
-			url:'http://nrdshpk.al',
-			image:'nrd.jpg',
-			logo:'nrd_logo.png',
+				},{
+					name:'ZigZag (Coming soon)',
+					url:'http://zigzag.al',
+					image:'zigzag.jpg',
+					logo:'zigzag_logo.png',
 
-        },{
-          	name:'Momenti.al',
-			url:'http://momenti.al',
-			image:'momenti.jpg',
-			logo:'momenti_logo.jpg',
+				},{
+					name:'2 Vellezerit Hoxha',
+					url:'http://2vellezerithoxha.com',
+					image:'2vhoxha.jpg',
+					logo:'2vhoxha_logo.png',
 
-        },{
-          	name:'Uaibo.com',
-			url:'http://uaibo.com',
-			image:'uaibo.jpg',
-			logo:'uaibo_logo.png',
+				},{
+					name:'Agrarja Anxhelo',
+					url:'http://agrarjaanxheloshpk.al',
+					image:'agrarja.jpg',
+					logo:'agrarja_logo.jpg',
 
-        },
-      ]
+				},{
+					name:'NRD Sh.P.K.',
+					url:'http://nrdshpk.al',
+					image:'nrd.jpg',
+					logo:'nrd_logo.png',
+
+				},{
+					name:'Momenti.al',
+					url:'http://momenti.al',
+					image:'momenti.jpg',
+					logo:'momenti_logo.jpg',
+
+				},{
+					name:'Uaibo.com',
+					url:'http://uaibo.com',
+					image:'uaibo.jpg',
+					logo:'uaibo_logo.png',
+
+				},
+			],
+            interests:[
+                {
+                    name:'Travel',
+                    logo:'travel_icon.png',
+                },{
+                    name:'Gaming',
+                    logo:'gaming_icon.png',
+                },{
+                    name:'Music',
+                    logo:'music_icon.png',
+                },{
+                    name:'Swimming',
+                    logo:'swiming_icon.png',
+                },{
+                    name:'Movies',
+                    logo:'movies_icon.png',
+                },{
+                    name:'Bicycling',
+                    logo:'bicycling_icon.png',
+                }
+            ]
+		},
+
+
     }
   },
 	mounted(){
@@ -794,7 +655,7 @@ export default {
 	},
 	methods:{
   	changeTheme(val){
-		if(!val)
+		if(val)
 			document.body.setAttribute('data-theme', 'dark');
 		else {
 			document.body.removeAttribute('data-theme');
@@ -999,13 +860,6 @@ export default {
 	$ball-color: #35b2f9;
 	$bg-color: #35b2f9;
 
-	body {
-		/*height: 100%;*/
-		/*display: flex;*/
-		/*align-items: center;*/
-		/*justify-content: center;*/
-	}
-
 	.loaderDiv{
 		min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
 		min-height: 100vh; /* These two lines are counted as one :-)       */
@@ -1019,419 +873,189 @@ export default {
 		position: relative;
 		width: 75px;
 		height: 100px;
-
-	&__bar {
-		 position: absolute;
-		 bottom: 0;
-		 width: 10px;
-		 height: 50%;
-		 background: $bar-color;
-		 transform-origin: center bottom;
-		 box-shadow: 1px 1px 0 rgba(0,0,0,.2);
-
-	@for $i from 1 through 5 {
-	&:nth-child(#{$i}) {
-		left: ($i - 1) * 15px;
-		transform: scale(1,$i*.2);
-		animation: barUp#{$i} 4s infinite;
-	}
 	}
 
-	}
+    .toggleWrapper {
 
-	&__ball {
-		 position: absolute;
-		 bottom: 10px;
-		 left: 0;
-		 width: 10px;
-		 height: 10px;
-		 background: $ball-color;
-		 border-radius: 50%;
-		 animation: ball 4s infinite;
-	 }
-	}
+        input {
+            position: absolute;
+            left: -99em;
+        }
+    }
 
-	@keyframes ball {
-		0% {
-			transform: translate(0, 0);
-		}
-		5% {
-			transform: translate(8px, -14px);
-		}
-		10% {
-			transform: translate(15px, -10px)
-		}
-		17% {
-			transform: translate(23px, -24px)
-		}
-		20% {
-			transform: translate(30px, -20px)
-		}
-		27% {
-			transform: translate(38px, -34px)
-		}
-		30% {
-			transform: translate(45px, -30px)
-		}
-		37% {
-			transform: translate(53px, -44px)
-		}
-		40% {
-			transform: translate(60px, -40px)
-		}
-		50% {
-			transform: translate(60px, 0)
-		}
-		57% {
-			transform: translate(53px, -14px)
-		}
-		60% {
-			transform: translate(45px, -10px)
-		}
-		67% {
-			transform: translate(37px, -24px)
-		}
-		70% {
-			transform: translate(30px, -20px)
-		}
-		77% {
-			transform: translate(22px, -34px)
-		}
-		80% {
-			transform: translate(15px, -30px)
-		}
-		87% {
-			transform: translate(7px, -44px)
-		}
-		90% {
-			transform: translate(0, -40px)
-		}
-		100% {
-			transform: translate(0, 0);
-		}
-	}
+    .toggle {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        width: 70px;
+        height: 40px;
+        background-color: #83D8FF;
+        border-radius: 90px - 6;
+        transition: background-color 200ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
 
-	@keyframes barUp1 {
-		0% {
-			transform: scale(1, .2);
-		}
-		40%{
-			transform: scale(1, .2);
-		}
-		50% {
-			transform: scale(1, 1);
-		}
-		90% {
-			transform: scale(1,1);
-		}
-		100% {
-			transform: scale(1,.2);
-		}
-	}
-	@keyframes barUp2 {
-		0% {
-			transform: scale(1, .4);
-		}
-		40% {
-			transform: scale(1, .4);
-		}
-		50% {
-			transform: scale(1, .8);
-		}
-		90% {
-			transform: scale(1, .8);
-		}
-		100% {
-			transform: scale(1, .4);
-		}
-	}
-	@keyframes barUp3 {
-		0% {
-			transform: scale(1, .6);
-		}
-		100% {
-			transform: scale(1, .6);
-		}
-	}
-	@keyframes barUp4 {
-		0% {
-			transform: scale(1, .8);
-		}
-		40% {
-			transform: scale(1, .8);
-		}
-		50% {
-			transform: scale(1, .4);
-		}
-		90% {
-			transform: scale(1, .4);
-		}
-		100% {
-			transform: scale(1, .8);
-		}
-	}
-	@keyframes barUp5 {
-		0% {
-			transform: scale(1, 1);
-		}
-		40% {
-			transform: scale(1, 1);
-		}
-		50% {
-			transform: scale(1, .2);
-		}
-		90% {
-			transform: scale(1, .2);
-		}
-		100% {
-			transform: scale(1, 1);
-		}
-	}
+    }
 
+    .toggle__handler {
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        top: 3px;
+        left: -14px;
+        width: 40px - 7;
+        height: 40px - 7;
+        background-color: #FFCF96;
+        border-radius: 50px;
+        box-shadow: 0 2px 6px rgba(0,0,0,.3);
+        transition: all 400ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        transform:  rotate(-45deg);
 
-/*	day-night switch*/
+        .crater {
+            position: absolute;
+            background-color: #E8CDA5;
+            opacity: 0;
+            transition: opacity 200ms ease-in-out;
+            border-radius: 100%;
+        }
 
+        .crater--1 {
+            top: 14px;
+            left: 8px;
+            width: 3px;
+            height: 3px;
+        }
 
-	*,
-	*::before,
-	*::after {
-		box-sizing: border-box;
-	}
+        .crater--2 {
+            top: 20px;
+            left: 17px;
+            width: 5px;
+            height: 5px;
+        }
 
-	/* =====================================================
-       Some defaults across all toggle demos
-       ===================================================== */
+        .crater--3 {
+            top: 8px;
+            left: 19px;
+            width: 7px;
+            height: 7px;
+        }
+    }
 
-	.toggle {
-		display: block;
-		text-align: center;
-		margin-top: 40px;
-		user-select: none;
-	}
-	.toggle--checkbox {
-		display: none;
-	}
-	.toggle--btn {
-		display: block;
-		margin: 0 auto;
+    .star {
+        position: absolute;
+        background-color: #ffffff;
+        transition: all 300ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+        border-radius: 50%;
+    }
 
-		font-size: 1.4em;
+    .star--1 {
+        top: 7px;
+        left: 27px;
+        z-index: 0;
+        width: 30px;
+        height: 3px;
+    }
 
-		transition: all 350ms ease-in;
+    .star--2 {
+        top: 15px;
+        left: 22px;
+        z-index: 1;
+        width: 30px;
+        height: 3px;
+    }
 
-		&:hover {
-			cursor: pointer;
-		}
-	}
+    .star--3 {
+        top: 24px;
+        left: 32px;
+        z-index: 0;
+        width: 30px;
+        height: 3px;
+    }
 
-	.toggle--btn,
-	.toggle--checkbox,
-	.toggle--feature {
-		&,
-		&:before,
-		&:after {
-			transition: all 250ms ease-in;
-		}
-		&:before,
-		&:after {
-			content: '';
-			display: block;
-		}
-	}
+    .star--4,
+    .star--5,
+    .star--6 {
+        opacity: 0;
+        transition: all 300ms 0 cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    }
 
+    .star--4 {
+        top: 13px;
+        left: 10px;
+        z-index: 0;
+        width: 2px;
+        height: 2px;
+        transform: translate3d(3px,0,0);
+    }
 
-	/* ===================================================
-       Day/Night and Gender toggle buttons
-       =================================================== */
+    .star--5 {
+        top: 29px;
+        left: 13px;
+        z-index: 0;
+        width: 3px;
+        height: 3px;
+        transform: translate3d(3px,0,0);
+    }
 
-	$toggleHeight: 40px;
-	$toggleWidth: 70px;
-	$borderWidth: 5px;
-	$toggleBtnRadius: $toggleHeight - 14px;
+    .star--6 {
+        top: 33px;
+        left: 20px;
+        z-index: 0;
+        width: 2px;
+        height: 2px;
+        transform: translate3d(3px,0,0);
+    }
 
-	$bgColor--night: #3c4145;
-	$borderColor--night: #1c1c1c;
-	$toggleBtn-bgColor--night: #fff;
-	$toggleBtn-borderColor--night: #e3e3c7;
+    input:checked {
+        + .toggle {
+            background-color: #749DD6;
 
-	$bgColor--day: #9ee3fb;
-	$borderColor--day: #86c3d7;
-	$toggleBtn-bgColor--day: #ffdf6d;
-	$toggleBtn-borderColor--day: #e1c348;
+            &:before {
+                color: #749ED7;
+            }
 
-	$cloud-borderColor: #d3d3d3;
-	$cloud-bgColor: #fff;
+            &:after {
+                color: #ffffff;
+            }
 
-	.toggle--daynight,
-	.toggle--like {
-		.toggle--btn {
-			position: relative;
-			height: $toggleHeight;
-			width: $toggleWidth;
-			border-radius: $toggleHeight;
+            .toggle__handler {
+                background-color: #FFE5B5;
+                transform: translate3d(29px, 0, 0) rotate(0);
 
-			//toggle button
-			&:before {
-				position: absolute;
-				top: 2px;
-				left: 4px;
-				width: $toggleBtnRadius;
-				height: $toggleBtnRadius;
-				border-radius: 50%;
-			}
-		}
-	}
+                .crater { opacity: 1; }
+            }
 
-	.toggle--daynight {
-		.toggle--btn {
-			border: $borderWidth solid $borderColor--night;
-			background-color: $bgColor--night;
+            .star--1 {
+                width: 2px;
+                height: 2px;
+            }
 
-			//toggle button
-			&:before {
-				background-color: $toggleBtn-bgColor--night;
-				border: $borderWidth solid $toggleBtn-borderColor--night;
-			}
-			&:after {
-				position: absolute;
-				top: 62%;
-				left: $toggleWidth - ($toggleBtnRadius) - ($borderWidth * 2) - 20px;
-				z-index: 10;
-				width: $toggleBtnRadius / 5;
-				height: $toggleBtnRadius / 5;
-				opacity: 0;
-				background-color: $cloud-bgColor;
-				border-radius: 50%;
+            .star--2 {
+                width: 4px;
+                height: 4px;
+                transform: translate3d(-5px, 0, 0);
+            }
 
-				//crazy ass box-shadow to make the cloud
-				box-shadow: $cloud-bgColor 0 0,
-				$cloud-bgColor 3px 0,
-				$cloud-bgColor 6px 0,
-				$cloud-bgColor 9px 0,
-				$cloud-bgColor 11px 0,
-				$cloud-bgColor 14px 0,
-				$cloud-bgColor 16px 0,
-				$cloud-bgColor 21px -1px 0 1px,
-				$cloud-bgColor 16px -7px 0 -2px,
-				$cloud-bgColor 7px -7px 0 1px,
+            .star--3 {
+                width: 2px;
+                height: 2px;
+                transform: translate3d(-7px, 0, 0);
+            }
 
-				$cloud-borderColor 0 0 0 4px,
-				$cloud-borderColor 6px 0 0 4px,
-				$cloud-borderColor 11px 0 0 4px,
-				$cloud-borderColor 16px 0 0 4px,
-				$cloud-borderColor 21px -1px 0 5px,
-				$cloud-borderColor 16px -7px 0 1px,
-				$cloud-borderColor 7px -7px 0 5px;
+            .star--4,
+            .star--5,
+            .star--6 {
+                opacity: 1;
+                transform: translate3d(0,0,0);
+            }
+            .star--4 {
+                transition: all 300ms 200ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+            }
+            .star--5 {
+                transition: all 300ms 300ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+            }
+            .star--6 {
+                transition: all 300ms 400ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+            }
+        }
+    }
 
-				transition: opacity 100ms ease-in;
-			}
-		}
-
-		@keyframes starry_star {
-			50% {
-				background-color: rgba(255,255,255,0.1);
-				box-shadow: #fff 30px -3px 0 0,
-				#fff 12px 10px 0 -1px,
-				rgba(255,255,255,0.1) 38px 18px 0 1px,
-				#fff 32px 34px 0 0,
-				rgba(255,255,255,0.1) 20px 24px 0 -1.5px,
-				#fff 5px 38px 0 1px;
-			}
-		}
-		@keyframes bounceIn {
-			0% {
-				opacity: 0;
-				transform: scale(.3);
-			}
-			50% {
-				opacity: 100;
-				transform: scale(1.1);
-			}
-			55% {
-				transform: scale(1.1);
-			}
-			75% {
-				transform: scale(.9);
-			}
-			100% {
-				opacity: 100;
-				transform: scale(1);
-			}
-		}
-		//stars
-		.toggle--feature {
-			display: block;
-			position: absolute;
-			top: 10px;
-			left: 55%;
-			z-index: 20;
-			width: 1px;
-			height: 1px;
-			border-radius: 50%;
-			background-color: #fff;
-
-			box-shadow: rgba(255,255,255,0.1) 30px -3px 0 0,
-			rgba(255,255,255,0.1) 5px 10px 0 -1px,
-			#fff 38px 18px 0 1px,
-			rgba(255,255,255,0.1) 25px 34px 0 0,
-			#fff 20px 24px 0 -1.5px,
-			rgba(255,255,255,0.1) 5px 38px 0 1px;
-
-			animation: starry_star 5s ease-in-out infinite;
-
-			&:before {
-				position: absolute;
-				top: -2px;
-				left: -15px;
-				width: 2px;
-				height: 2px;
-				background-color: $toggleBtn-bgColor--night;
-				border-radius: 50%;
-				border: 5px solid $toggleBtn-borderColor--night;
-
-				box-shadow: $toggleBtn-borderColor--night -13px 0 0 -3px,
-				$toggleBtn-borderColor--night -8px 6px 0 -2px;
-
-				transform-origin: -6px 130%;
-			}
-		}
-
-		//what happens once checkbox is checked
-		.toggle--checkbox:checked {
-			& + .toggle--btn {
-				background-color: $bgColor--day;
-				border: $borderWidth solid $borderColor--day;
-
-				&:before {
-					left: $toggleWidth - ($toggleBtnRadius) - ($borderWidth * 2) - 4px;
-					background-color: $toggleBtn-bgColor--day;
-					border: $borderWidth solid $toggleBtn-borderColor--day;
-				}
-				&:after {
-					opacity: 100;
-					animation-name: bounceIn;
-					animation-duration: 0.60s;
-					animation-delay: 0.10s;
-					animation-fill-mode: backwards;
-					animation-timing-function: ease-in-out;
-				}
-
-				> .toggle--feature {
-					opacity: 0;
-					box-shadow: rgba(255,255,255,0.1) 30px -3px 0 -4px,
-					rgba(255,255,255,0.1) 12px 10px 0 -5px,
-					#fff 38px 18px 0 -3px,
-					rgba(255,255,255,0.1) 32px 34px 0 -4px,
-					#fff 20px 24px 0 -5.5px,
-					rgba(255,255,255,0.1) 5px 38px 0 -3px;
-					animation: none;
-
-					&:before {
-						left: 25px;
-						transform: rotate(70deg);
-					}
-				}
-			}
-		}
-	}
 </style>

@@ -7,7 +7,8 @@
     data: () => ({
       chartdata: {
         labels: [2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019],
-        datasets: [{
+        datasets: [
+            {
           label: 'PHP (mostly Laravel)',
           borderColor: '#e8242d',
           backgroundColor: '#e8242d',
@@ -16,7 +17,8 @@
             0,1,2.5,3.5,3.5,5,5.5,6,8
           ],
           yAxisID: 'y-axis-1',
-        }, {
+        },
+            {
           label: 'Javascript (mostly Vue.js)',
           borderColor: '#45b5f4',
           backgroundColor: '#45b5f4',
@@ -35,7 +37,8 @@
             2,4,6,8,8,8,9,9,9
           ],
           yAxisID: 'y-axis-3'
-        }, {
+        },
+            {
           label: 'Python',
           borderColor: '#f08d00',
           backgroundColor: '#f08d00',
@@ -44,7 +47,8 @@
             0,2,4,4,4,4,4,4,4
           ],
           yAxisID: 'y-axis-4'
-        }, {
+        },
+            {
           label: 'Java',
           borderColor: '#41d67d',
           backgroundColor: '#41d67d',
@@ -54,7 +58,8 @@
 
           ],
           yAxisID: 'y-axis-5'
-        }, {
+        },
+            {
           label: 'C++',
           borderColor: '#916b14',
           backgroundColor: '#916b14',
