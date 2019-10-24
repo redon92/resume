@@ -50,6 +50,13 @@
 	box-shadow: 0 0 3px #0487cc;
 }
 
+.download-resume:hover{
+	border-color: #0487cc !important;
+	box-shadow: 0 0 3px #0487cc !important;
+	background-color: #0487cc !important;
+	color:white !important;
+}
+
 .section-education h3::before {
 	border-top-color: #035c8a;
 	border-right-color: #035c8a;
