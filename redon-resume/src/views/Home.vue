@@ -678,7 +678,6 @@ export default {
 		--single-blog:#ffffff;
 		--theme-option:#000000;
 		--content-bg:#efefef;
-
 	}
 
 	[data-theme="dark"] {
