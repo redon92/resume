@@ -1,36 +1,37 @@
 {
-  "name": "redon.al",
-  "version": "1.0.0",
-  "description": "redon resume",
-  "main": "index.js",
+  "name": "redon-resume",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm run dev",
-    "serve": "serve",
-    "build": "build",
-    "lint": "lint"
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
   },
-  "repository": {
-    "type": "git",
-    "url": "ssh://lacakafx@lacaj.al:21098/home/lacakafx/redon.al"
+  "dependencies": {
+    "chart.js": "^2.8.0",
+    "core-js": "^2.6.5",
+    "moment": "^2.24.0",
+    "register-service-worker": "^1.6.2",
+    "vue": "^2.6.10",
+    "vue-chartjs": "^3.4.2",
+    "vue-router": "^3.0.3",
+    "vuedraggable": "^2.23.2"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.11.0",
-    "@vue/cli-plugin-eslint": "^3.11.0",
+    "@vue/cli-plugin-pwa": "^3.11.0",
     "@vue/cli-service": "^3.11.0",
-    "babel-eslint": "^10.0.1",
-    "eslint": "^5.16.0",
-    "eslint-plugin-vue": "^5.0.0",
+    "cross-env": "^7.0.0",
+    "sass": "^1.18.0",
+    "sass-loader": "^7.1.0",
     "vue-template-compiler": "^2.6.10"
   },
-  "keywords": [
-    "redon",
-    "resume",
-    "cv"
-  ],
-  "author": "Redon Lacaj",
-  "license": "ISC",
-  "dependencies": {
-    "serve": "^11.2.0"
-  }
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
 }
