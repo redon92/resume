@@ -8,8 +8,8 @@ self.__precacheManifest = [
     "url": "/js/about.8a099f9e.js"
   },
   {
-    "revision": "938d29fb767340262f99",
-    "url": "/js/app.5b084143.js"
+    "revision": "198f867e8b9a58446279",
+    "url": "/js/app.d5132ceb.js"
   },
   {
     "revision": "3bd15f6c5adc74ce8ce4",
@@ -60,7 +60,7 @@ self.__precacheManifest = [
     "url": "/images/portfolio/zigzag_logo.png"
   },
   {
-    "revision": "0e8e1a5669ce9faf4671ee6ebe2c8aba",
+    "revision": "63b2f2b177dc8ce33cc7c07bab9ff2e7",
     "url": "/index.html"
   },
   {
@@ -100,16 +100,16 @@ self.__precacheManifest = [
     "url": "/images/interests/music_icon.png"
   },
   {
-    "revision": "331819156f446e9770024ec7dc6363ee",
-    "url": "/images/interests/swiming_icon.png"
+    "revision": "0018289be3cda303cce6be3b931ec00a",
+    "url": "/images/interests/shopping_icon.png"
   },
   {
     "revision": "e6277c5f3934ff474b07a4a96642825c",
     "url": "/images/interests/travel_icon.png"
   },
   {
-    "revision": "0018289be3cda303cce6be3b931ec00a",
-    "url": "/images/interests/shopping_icon.png"
+    "revision": "331819156f446e9770024ec7dc6363ee",
+    "url": "/images/interests/swiming_icon.png"
   },
   {
     "revision": "84beb7d687849d247961470fd3ef05db",
@@ -144,12 +144,12 @@ self.__precacheManifest = [
     "url": "/images/favicon.png"
   },
   {
-    "revision": "fb458d9129238513b9d5692a71eb7d4d",
-    "url": "/css/stylefonts.css"
+    "revision": "68c1757f2be4490ada441a51f3aed4ae",
+    "url": "/css/colors/color8-00cf95c.css"
   },
   {
-    "revision": "f52dd035bf5b3e9fa6aa0db2ce80e6fe",
-    "url": "/css/colors/color10-8200ff.css"
+    "revision": "985f7d00934e395f961188ac00dd4dc5",
+    "url": "/css/colors/color1-0487cc.css"
   },
   {
     "revision": "f143b61bb720e8e0f0c87ece86bae58c",
@@ -168,24 +168,24 @@ self.__precacheManifest = [
     "url": "/css/styleNew.css"
   },
   {
-    "revision": "2ba29d89b90b3f316c8d979e4b55c7dd",
-    "url": "/css/colors/color12-5457a6.css"
+    "revision": "f52dd035bf5b3e9fa6aa0db2ce80e6fe",
+    "url": "/css/colors/color10-8200ff.css"
   },
   {
     "revision": "e6d5bec40d1c50a88f83832739e32891",
     "url": "/css/style2.css"
   },
   {
-    "revision": "b9230a32ddb5a2d74070a07618afe7d8",
-    "url": "/css/colors/light.css"
-  },
-  {
-    "revision": "68c1757f2be4490ada441a51f3aed4ae",
-    "url": "/css/colors/color8-00cf95c.css"
-  },
-  {
     "revision": "c4d00215a9a12521aeb8eee8014d2fde",
     "url": "/css/responsive.css"
+  },
+  {
+    "revision": "fb458d9129238513b9d5692a71eb7d4d",
+    "url": "/css/stylefonts.css"
+  },
+  {
+    "revision": "b9230a32ddb5a2d74070a07618afe7d8",
+    "url": "/css/colors/light.css"
   },
   {
     "revision": "7f24199b9010e6c96e93bdd243a363eb",
@@ -204,23 +204,23 @@ self.__precacheManifest = [
     "url": "/css/colors/color4-f35b25.css"
   },
   {
-    "revision": "3fb37d068871b06d28c6c21b5fe86eb7",
-    "url": "/css/colors/color3-2eac6d.css"
-  },
-  {
     "revision": "24a53838fd9baf55504a0924e9e32cdd",
     "url": "/css/colors/color2-f23a3a.css"
+  },
+  {
+    "revision": "3fb37d068871b06d28c6c21b5fe86eb7",
+    "url": "/css/colors/color3-2eac6d.css"
   },
   {
     "revision": "b2fb26f67e86fc377a5c4632dc095525",
     "url": "/cv/CV_Redon_Lacaj_5.pdf"
   },
   {
-    "revision": "985f7d00934e395f961188ac00dd4dc5",
-    "url": "/css/colors/color1-0487cc.css"
+    "revision": "2ba29d89b90b3f316c8d979e4b55c7dd",
+    "url": "/css/colors/color12-5457a6.css"
   },
   {
-    "revision": "938d29fb767340262f99",
+    "revision": "198f867e8b9a58446279",
     "url": "/css/app.8ec05c03.css"
   }
 ];

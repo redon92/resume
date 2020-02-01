@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.d3de5fdbe1fbf2c5cc1d896f134d8834.js"
+  "/precache-manifest.23adc996d8192c0430dcb5a5d3dfb152.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "redon-resume"});
