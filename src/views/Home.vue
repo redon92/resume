@@ -678,6 +678,7 @@ export default {
 		--single-blog:#ffffff;
 		--theme-option:#000000;
 		--content-bg:#efefef;
+		--section-shadow:#428bca42;
 	}
 
 	[data-theme="dark"] {
@@ -692,6 +693,7 @@ export default {
 		--single-blog:#aaaaaa;
 		--theme-option:#eeeeee;
 		--content-bg:#2a2c30;
+		--section-shadow:#0487cc;
 
 	}
 
@@ -707,6 +709,7 @@ export default {
 		--single-blog:#ffffff;
 		--theme-option:#000000;
 		--content-bg:#efefef;
+		--section-shadow:#428bca42;
 
 	}
 
@@ -714,6 +717,21 @@ export default {
 		background-color: var(--bg-color);
 		color: var(--font-color);
 		/*other styles*/
+	}
+
+	.section-about,
+	.section-blog .blog-content,
+	.section-contact-us .form-content,
+	.section-contact-us .info-content,
+	.section-education .education-content,
+	.section-experience .experience-content,
+	.section-experience .icon-experience,
+	.section-portfolio .item-portfolio,
+	.section-pricing .pricing-content,
+	.section-skills .additional-skills,
+	.section-skills .professional-skills,
+	.section-testimonials .swiper-slide {
+		box-shadow: 0 2px 5px 0 var(--section-shadow), 0 2px 10px 0 var(--section-shadow)
 	}
 
 

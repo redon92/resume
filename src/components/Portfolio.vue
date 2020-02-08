@@ -1,7 +1,7 @@
 <template>
     <div class="col-sm-4 content">
       <a :href="resumePort.port.url">
-        <div class="item-portfolio term3" style="height:300px; overflow-y: scroll;">
+        <div class="item-portfolio term3" style="height:300px;">
     
           <div class="item-overlay">
             <div class="item-content">
