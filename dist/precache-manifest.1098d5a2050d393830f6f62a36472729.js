@@ -1,7 +1,7 @@
 self.__precacheManifest = [
   {
-    "revision": "87c131ccf086c36ea8108b7609c16d0f",
-    "url": "/images/portfolio/alpha_logo.png"
+    "revision": "09a0dc5911144539db33bc4783708840",
+    "url": "/images/portfolio/selca_logo.png"
   },
   {
     "revision": "4d0140eae3cac32cc9b869cb6956ed8a",
@@ -12,7 +12,7 @@ self.__precacheManifest = [
     "url": "/js/chunk-vendors.88b27fae.js"
   },
   {
-    "revision": "2cc0d8f9ed6979f7a59d467d3e4c8568",
+    "revision": "50cc71d19e6fa2e9aef271117fba38a7",
     "url": "/index.html"
   },
   {
@@ -36,12 +36,12 @@ self.__precacheManifest = [
     "url": "/images/portfolio/selca.jpg"
   },
   {
-    "revision": "a1b5e00c9bcf9a02885c7befe1816c0c",
-    "url": "/images/portfolio/zigzag_logo.png"
-  },
-  {
     "revision": "f1e4237cc2b4cae8cbc0ae68f549b22e",
     "url": "/images/portfolio/alpha.jpg"
+  },
+  {
+    "revision": "a1b5e00c9bcf9a02885c7befe1816c0c",
+    "url": "/images/portfolio/zigzag_logo.png"
   },
   {
     "revision": "f50d4e5723813f58b7c8213b65739988",
@@ -80,36 +80,36 @@ self.__precacheManifest = [
     "url": "/images/portfolio/uaibo_logo.png"
   },
   {
-    "revision": "afe6375e998946278276",
-    "url": "/js/app.308923c6.js"
+    "revision": "6c26a1476af51d4b4129",
+    "url": "/js/app.ab1d0c71.js"
   },
   {
-    "revision": "09a0dc5911144539db33bc4783708840",
-    "url": "/images/portfolio/selca_logo.png"
+    "revision": "87c131ccf086c36ea8108b7609c16d0f",
+    "url": "/images/portfolio/alpha_logo.png"
   },
   {
     "revision": "a567e9c3c154f46cb00d5eb132d6d96a",
     "url": "/images/me.jpg"
   },
   {
-    "revision": "25f615d3248bb2f01d8f81dfae5780b4",
-    "url": "/images/interests/music_icon.png"
-  },
-  {
-    "revision": "0018289be3cda303cce6be3b931ec00a",
-    "url": "/images/interests/shopping_icon.png"
+    "revision": "331819156f446e9770024ec7dc6363ee",
+    "url": "/images/interests/swiming_icon.png"
   },
   {
     "revision": "e6277c5f3934ff474b07a4a96642825c",
     "url": "/images/interests/travel_icon.png"
   },
   {
-    "revision": "331819156f446e9770024ec7dc6363ee",
-    "url": "/images/interests/swiming_icon.png"
-  },
-  {
     "revision": "84beb7d687849d247961470fd3ef05db",
     "url": "/images/loader.gif"
+  },
+  {
+    "revision": "859638032220506358b44391f0a3fac5",
+    "url": "/css/styleNew.css"
+  },
+  {
+    "revision": "0018289be3cda303cce6be3b931ec00a",
+    "url": "/images/interests/shopping_icon.png"
   },
   {
     "revision": "47e0463ac199c86d76ce2dd2b130a102",
@@ -120,64 +120,64 @@ self.__precacheManifest = [
     "url": "/images/interests/bicycling_icon.png"
   },
   {
-    "revision": "5296f9e1e0db6860d19a5b22393e5a09",
-    "url": "/images/interests/movies_icon.png"
-  },
-  {
     "revision": "08bd631e92699653229ac599ae3045d3",
     "url": "/images/interests/gaming_icon.png"
+  },
+  {
+    "revision": "25f615d3248bb2f01d8f81dfae5780b4",
+    "url": "/images/interests/music_icon.png"
+  },
+  {
+    "revision": "5296f9e1e0db6860d19a5b22393e5a09",
+    "url": "/images/interests/movies_icon.png"
   },
   {
     "revision": "59f489cd342e22e1abd1d4507f23ca2e",
     "url": "/css/colors/color5-f6416c.css"
   },
   {
-    "revision": "6043645c2e2a51edf37bb6979986132f",
-    "url": "/favicon.png"
+    "revision": "2d945b3083a0b4a626dbf614a62cb2b4",
+    "url": "/css/colors/dark.css"
   },
   {
     "revision": "6043645c2e2a51edf37bb6979986132f",
     "url": "/images/favicon.png"
   },
   {
-    "revision": "24a53838fd9baf55504a0924e9e32cdd",
-    "url": "/css/colors/color2-f23a3a.css"
-  },
-  {
-    "revision": "f143b61bb720e8e0f0c87ece86bae58c",
-    "url": "/css/colors/color9-827055.css"
-  },
-  {
     "revision": "b2fb26f67e86fc377a5c4632dc095525",
     "url": "/cv/CV_Redon_Lacaj_5.pdf"
-  },
-  {
-    "revision": "c4d00215a9a12521aeb8eee8014d2fde",
-    "url": "/css/responsive.css"
   },
   {
     "revision": "43dd3ae8071bdc36bd7c6c17bc75139d",
     "url": "/css/stylefonts.css"
   },
   {
-    "revision": "859638032220506358b44391f0a3fac5",
-    "url": "/css/styleNew.css"
+    "revision": "6043645c2e2a51edf37bb6979986132f",
+    "url": "/favicon.png"
+  },
+  {
+    "revision": "6cf4e5051399d798bcb043a7976953c3",
+    "url": "/css/style2.css"
   },
   {
     "revision": "b9230a32ddb5a2d74070a07618afe7d8",
     "url": "/css/colors/light.css"
   },
   {
+    "revision": "c4d00215a9a12521aeb8eee8014d2fde",
+    "url": "/css/responsive.css"
+  },
+  {
     "revision": "1c057cf91b1bdbf1d1685e6e955a8d29",
     "url": "/css/style3.js"
   },
   {
-    "revision": "2d945b3083a0b4a626dbf614a62cb2b4",
-    "url": "/css/colors/dark.css"
+    "revision": "3d9955b13c9d70acd45da40feeeeca7a",
+    "url": "/css/colors/color11-e4c144.css"
   },
   {
-    "revision": "6cf4e5051399d798bcb043a7976953c3",
-    "url": "/css/style2.css"
+    "revision": "1ee0139955b29902a768923ec0e8448c",
+    "url": "/css/colors/color4-f35b25.css"
   },
   {
     "revision": "68c1757f2be4490ada441a51f3aed4ae",
@@ -192,20 +192,20 @@ self.__precacheManifest = [
     "url": "/css/colors/color6-ff9999.css"
   },
   {
-    "revision": "1ee0139955b29902a768923ec0e8448c",
-    "url": "/css/colors/color4-f35b25.css"
+    "revision": "f143b61bb720e8e0f0c87ece86bae58c",
+    "url": "/css/colors/color9-827055.css"
   },
   {
     "revision": "3fb37d068871b06d28c6c21b5fe86eb7",
     "url": "/css/colors/color3-2eac6d.css"
   },
   {
-    "revision": "2ba29d89b90b3f316c8d979e4b55c7dd",
-    "url": "/css/colors/color12-5457a6.css"
+    "revision": "24a53838fd9baf55504a0924e9e32cdd",
+    "url": "/css/colors/color2-f23a3a.css"
   },
   {
-    "revision": "3d9955b13c9d70acd45da40feeeeca7a",
-    "url": "/css/colors/color11-e4c144.css"
+    "revision": "2ba29d89b90b3f316c8d979e4b55c7dd",
+    "url": "/css/colors/color12-5457a6.css"
   },
   {
     "revision": "f52dd035bf5b3e9fa6aa0db2ce80e6fe",
@@ -216,7 +216,7 @@ self.__precacheManifest = [
     "url": "/css/colors/color1-0487cc.css"
   },
   {
-    "revision": "afe6375e998946278276",
+    "revision": "6c26a1476af51d4b4129",
     "url": "/css/app.2bfdb98d.css"
   }
 ];
