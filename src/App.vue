@@ -1,358 +1,642 @@
 <template>
-  <div id="app">
-    <div class="content">
-      <!-- #LOADER# --> <!-- other loader : http://tobiasahlin.com/spinkit/ -->
+<!--  <div id="app">-->
 
-      <div v-if="loading" class="loaderDiv">
-        <div class="loader">
-          <div class="loader__bar"></div>
-          <div class="loader__bar"></div>
-          <div class="loader__bar"></div>
-          <div class="loader__bar"></div>
-          <div class="loader__bar"></div>
-          <div class="loader__ball"></div>
-        </div>
-      </div>
-      <!-- #MENU# -->
-      <div class="resumeStyle" v-else>
-        <div class="menu">
-          <h2 class="logo"><img src="images/favicon.png" style="max-width:100px" alt=""></h2>
-          <div class="menu-content">
-            <ul>
-              <li><a class="active" href="#" data-value="about">ABOUT</a></li>
-              <li><a href="#" data-value="skills">SKILLS</a></li>
-              <li><a href="#" data-value="education">EDUCATION</a></li>
-              <li><a href="#" data-value="experience">EXPERIENCE</a></li>
-              <li><a href="#" data-value="portfolio">PORTFOLIO</a></li>
-              <li><a href="#" data-value="interests">INTERESTS</a></li>
-              <li><a href="#" data-value="contact-us">CONTACT ME</a></li>
-            </ul>
-          </div>
-          <div style="display: flex;">
-            <div class="open-menu">
-              <i class="fa fa-bars"></i>
-            </div>
-            <input type="checkbox" v-model="theme" @change="changeTheme(theme)">
+    <div class="body">
+<!--      <div v-if="!loading">-->
+<!--        <p style="white-space:pre" id="loaderTyped">-->
 
-          </div>
-        </div>
-        <div class="darkLight" data-tootik="dark/light">
-          <div class="toggleWrapper">
-            <input type="checkbox" v-model="theme" @change="changeTheme(theme)" class="dn" id="dn"/>
-            <label for="dn" class="toggle">
-                        <span class="toggle__handler">
-                          <span class="crater crater--1"></span>
-                          <span class="crater crater--2"></span>
-                          <span class="crater crater--3"></span>
-                        </span>
-              <span class="star star--1"></span>
-              <span class="star star--2"></span>
-              <span class="star star--3"></span>
-              <span class="star star--4"></span>
-              <span class="star star--5"></span>
-              <span class="star star--6"></span>
-            </label>
-          </div>
-        </div>
-        <div class="scroll-top" data-tootik="TOP" data-tootik-conf="invert no-arrow no-fading">
-          <i class="fa fa-arrow-up"></i>
-        </div>
-        <!-- #CONTAINER# -->
-        <div class="container">
-          <!-- #ABOUT# -->
-          <section id="about" class="section section-about wow fadeInUp">
-            <div class="profile">
-              <div class="row text-left">
-                <div class="col-sm-4 ">
-                  <div class="photo-profile">
-                    <img src="images/me.jpg" alt="Redon Lacaj">
-                  </div>
-                  <a href="cv/CV_Redon_Lacaj_5.pdf" target="cv">
-                    <div class="download-resume">
-                      <i class="fa fa-cloud-download" aria-hidden="true"></i>
-                      <span class="text-download">DOWNLOAD CV</span>
+<!--        </p>-->
+<!--      </div>-->
+      <div>
+      <header id="header" class="header-floating-icons" data-plugin-options="{'stickyEnabled': false, 'stickyEnableOnBoxed': false, 'stickyEnableOnMobile': false, 'stickyStartAt': 0, 'stickySetTop': '60px', 'stickyChangeLogo': false}">
+        <div class="header-body">
+          <div class="header-container container">
+            <div class="header-row">
+              <div class="header-column">
+                <div class="header-row">
+                  <div class="header-nav pt-1">
+                    <div class="header-nav-main">
+                      <nav class="wrapper-spy collapse">
+                        <ul class="nav" id="mainNav">
+                          <li>
+                            <a data-hash href="#about-me" class="nav-link text-color-dark bg-color-primary">
+                              <i class="icon-home icons"></i>
+                              <span class="custom-tooltip">About Me</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a data-hash href="#experience" class="nav-link text-color-dark bg-color-primary">
+                              <i class="icon-eye icons"></i>
+                              <span class="custom-tooltip">Experience</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a data-hash href="#education" class="nav-link text-color-dark bg-color-primary">
+                              <i class="icon-briefcase icons"></i>
+                              <span class="custom-tooltip">Education</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a data-hash href="#skills" class="nav-link text-color-dark bg-color-primary">
+                              <i class="icon-graduation icons"></i>
+                              <span class="custom-tooltip">Skills</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a data-hash href="#portfolio" class="nav-link text-color-dark bg-color-primary">
+                              <i class="icon-diamond icons"></i>
+                              <span class="custom-tooltip">Portfolio</span>
+                            </a>
+                          </li>
+<!--                          <li>-->
+<!--                            <a data-hash href="#recommendations" class="nav-link text-color-dark bg-color-primary">-->
+<!--                              <i class="icon-pencil icons"></i>-->
+<!--                              <span class="custom-tooltip">Recommendations</span>-->
+<!--                            </a>-->
+<!--                          </li>-->
+<!--                          <li>-->
+<!--                            <a data-hash href="#blog" class="nav-link text-color-dark bg-color-primary">-->
+<!--                              <i class="icon-bubbles icons"></i>-->
+<!--                              <span class="custom-tooltip">Blog</span>-->
+<!--                            </a>-->
+<!--                          </li>-->
+                          <li>
+                            <a data-hash href="#say-hello" class="nav-link text-color-dark bg-color-primary">
+                              <i class="icon-envelope-open icons"></i>
+                              <span class="custom-tooltip">Say Hello</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </nav>
                     </div>
-                  </a>
-
+                    <button class="btn header-btn-collapse-nav" data-toggle="collapse" data-target=".header-nav-main nav">
+                      <i class="fas fa-bars"></i>
+                    </button>
+                  </div>
                 </div>
-                <div class="col-sm-8">
-                  <div class="info-profile">
-                    <h2><span>HI I'M</span> {{person.name}}</h2>
-                    <h3>{{person.profession}}</h3>
-                    <p>{{person.about}}</p>
-                    <div class="row">
-                      <div class="col-sm-6">
-                        <ul class="ul-info">
-                          <li class="li-info">
-                            <span class="title-info">Age</span>
-                            <span class="info">{{person.age}}</span>
-                          </li>
-                          <li class="li-info">
-                            <span class="title-info">Address</span>
-                            <span class="info">{{person.address}}</span>
-                          </li>
-                          <li class="li-info">
-                            <span class="title-info">Email</span>
-                            <span class="info">{{person.email}}</span>
-                          </li>
-                        </ul>
-                      </div>
-                      <div class="col-sm-6">
-                        <ul class="ul-info">
-                          <li class="li-info"> <span class="title-info">Phone</span> <span class="info">{{person.phone}}</span></li>
-                          <li class="li-info">
-                            <span class="title-info">Website</span>
-                            <span class="info"><a href="">{{person.website}}</a></span>
-                          </li>
-                          <li class="li-info">
-                            <span class="title-info">Nationality</span>
-                            <span class="info">{{person.nationality}}</span>
-                          </li>
-                        </ul>
-                      </div>
-                      <div class="col-sm-12">
-                        <span class="title-links">Social Links</span>
-                        <ul class="ul-social-links">
-                          <li class="li-social-links" v-for="social in person.social">
-                            <a :href="social.url" :data-tootik="social.name" data-tootik-conf="square"><i :class="'fa fa-'+social.slug" aria-hidden="true"></i></a>
-                          </li>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
 
-                        </ul>
+      <div role="main" class="main">
+
+        <section id="about-me" class="section section-no-border section-parallax custom-section-padding-1 custom-position-1 custom-xs-bg-size-cover parallax-no-overflow m-0" data-plugin-parallax data-plugin-options="{'speed': 1.5}" data-image-src="img/demos/resume/about-me/about-me-bg-1.jpg">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-5 custom-sm-margin-bottom-1">
+                <img src="images/redon_medium.jpg" class="img-fluid custom-border custom-image-position-2 custom-box-shadow-4" alt />
+              </div>
+              <div class="col-lg-7 col-xl-7">
+                <h1 class="" style="font-size: 50px">Hi I'm</h1>
+                <h1 class=" custom-font-size-1">{{person.name}}</h1>
+                <p style="min-height: 30px;" class="mt-4"> <span class="font-weight-normal text-lg-6 custom-margin-bottom-1 pt-3" style="color: #777;line-height: 26px;margin: 0 0 20px; font-family: 'Open Sans', Arial, sans-serif;" id="typed"></span>
+                </p>
+
+                <span class="custom-about-me-infos">
+								<span class="text-lg-5" style="line-height: 1.7">
+                  I have an in-depth knowledge in Laravel, CakePHP, PHP, React Native, Vue.js, MYSQL, HTML5/CSS3.
+                  I currently work with Laravel and Vue, depending on the project. </span>
+<!--                <span class="">-->
+<!--                  <strong class="">Currently working at: </strong>-->
+<!--                  {{person.current_job}}-->
+<!--                </span>-->
+<!--								<span class="custom-text-color-1 text-uppercase mb-3">Information Technology &amp; Services</span>-->
+<!--								<span class="custom-text-color-1 text-uppercase">-->
+<!--									<strong class="text-color-light">Previous: </strong>-->
+<!--									Front-End Developer at Porto-->
+<!--									<a data-hash href="#experience" class="btn btn-tertiary text-uppercase custom-btn-style-1 text-1 ml-2">View More</a>-->
+<!--								</span>-->
+<!--								<span class="custom-text-color-1 text-uppercase">-->
+<!--									<strong class="text-color-light">Education: </strong>-->
+<!--									Porto School-->
+<!--									<a data-hash href="#education" class="btn btn-tertiary text-uppercase custom-btn-style-1 text-1 ml-2">View More</a>-->
+<!--								</span>-->
+							</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="custom-about-me-links bg-color-light">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-5"></div>
+              <div class="col-lg-2 text-center custom-xs-border-bottom p-0">
+                <a data-hash href="#say-hello" class="text-decoration-none">
+								<span class="custom-nav-button text-color-dark">
+									<i class="icon-earphones-alt icons text-color-primary"></i>
+									Contact
+								</span>
+                </a>
+              </div>
+              <div class="col-lg-2 text-center custom-xs-border-bottom p-0">
+                <a data-hash href="#say-hello" class="text-decoration-none">
+								<span class="custom-nav-button custom-divisors text-color-dark">
+									<i class="icon-envelope-open icons text-color-primary"></i>
+									Send Message
+								</span>
+                </a>
+              </div>
+              <div class="col-lg-3 text-center p-0">
+                <a href="cv/Redon_Lacaj_cv_june.pdf" class="text-decoration-none">
+								<span class="custom-nav-button text-color-dark">
+									<i class="icon-cloud-download icons text-color-primary"></i>
+									Download Resume
+								</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <section class="section section-no-border bg-color-light m-0">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+
+                <div class="custom-box-details bg-color-light custom-box-shadow-1 col-lg-6 ml-5 mb-5 mb-lg-4 float-right clearfix">
+                  <h4>Personal Details</h4>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <ul class="custom-list-style-1 p-0 mb-0">
+                        <li>
+                          <span class="text-color-dark">Birthday:</span>
+                          <span class="custom-text-color-2">{{ person.birthdate }}</span>
+                        </li>
+                        <li>
+                          <span class="text-color-dark">Marital:</span>
+                          <span class="custom-text-color-2">{{person.marital}}</span>
+                        </li>
+                        <li>
+                          <span class="text-color-dark">Nationality:</span>
+                          <span class="custom-text-color-2">{{ person.nationality }}</span>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-md-6">
+                      <ul class="custom-list-style-1 p-0 mb-0">
+                        <li>
+                          <span class="text-color-dark">Skype:</span>
+                          <span class="custom-text-color-2"><a class="custom-text-color-2" href="skype:redon.lacaj?chat">redon.lacaj</a></span>
+                        </li>
+                        <li>
+                          <span class="text-color-dark">PHONE:</span>
+                          <span class="custom-text-color-2"><a class="custom-text-color-2" href="tel:+355672266112">+355 67 22 66 112</a></span>
+                        </li>
+                        <li>
+                          <span class="text-color-dark">EMAIL:</span>
+                          <span class="custom-text-color-2" style="font-size: 11px; text-transform: lowercase"><a class="custom-text-color-2" href="mailto:92redon@gmail.com">92redon@gmail.com</a></span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <h2 class="text-color-quaternary font-weight-extra-bold text-uppercase">About Me</h2>
+
+                <p class="custom-text-color-2">{{ person.about}}</p>
+
+                <div class="about-me-more" id="aboutMeMore">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tincidunt nulla tortor, a imperdiet enim tristique nec. Nulla lobortis leo eget metus dapibus sodales. Sed placerat vitae dui vitae vehicula. Quisque in tincidunt ligula, nec dignissim arcu. Praesent aliquam velit vel libero dictum, non sollicitudin lectus mollis. Morbi sollicitudin auctor gravida. Vivamus vitae dui non lorem euismod pretium. Morbi congue sem sed ex iaculis, nec mattis felis pretium. Nullam molestie libero id odio blandit sodales. Suspendisse non mauris et felis molestie placerat aliquet a risus. Aliquam ac leo tempus, hendrerit eros mollis, gravida est.</p>
+
+                  <p>Proin euismod ipsum a tellus condimentum dapibus. Integer porttitor felis elit, eget rutrum ligula commodo quis. Praesent ultricies neque eu mi congue blandit. Nulla feugiat feugiat aliquet. Morbi sed mattis erat. Nullam scelerisque molestie eros, id tristique felis iaculis non. Duis pellentesque neque eget iaculis varius. Donec at nisl semper, aliquam est id, tincidunt lacus. Donec at erat purus.</p>
+
+                  <p>Morbi tincidunt nunc non diam porta, at fermentum orci bibendum. Donec arcu nisi, ornare nec commodo vitae, sollicitudin sed magna. Cras sit amet justo et nulla pulvinar laoreet. Phasellus scelerisque, metus id posuere vulputate, diam tellus iaculis sapien, eget scelerisque ipsum libero convallis velit. Duis lorem ligula, faucibus quis tellus nec, fringilla ultricies leo. Etiam tempus congue magna. Suspendisse porta dictum tortor, eu volutpat ipsum eleifend nec. Aliquam dapibus lorem luctus, cursus libero imperdiet, mattis nunc. Sed in ipsum diam. Quisque efficitur metus purus, vitae fermentum lacus venenatis id.</p>
+                </div>
+
+                <a id="aboutMeMoreBtn" class="btn btn-tertiary text-uppercase custom-btn-style-1 text-1" href="#">View More</a>
+
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="experience" class="section section-secondary section-no-border m-0">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <h2 class="text-color-quaternary text-uppercase font-weight-extra-bold">Experience</h2>
+                <section class="timeline custom-timeline" id="timeline">
+                  <div class="timeline-body">
+                    <article v-for="exp in person.experiences" class="timeline-box right custom-box-shadow-2">
+                      <div class="row">
+                        <div class="experience-info col-lg-3 col-sm-5 bg-color-primary">
+
+												<span class="from text-color-dark text-uppercase">
+													From
+													<span class="font-weight-semibold">{{exp.start}}</span>
+												</span>
+                          <span class="to text-color-dark text-uppercase mb-4">
+													To
+													<span class="font-weight-semibold">{{exp.end}}</span>
+												</span>
+<!--                          <p class="text-color-dark">(3 Years 9 Months)</p>-->
+                          <span class="company text-color-dark font-weight-semibold">
+													{{exp.company}}
+													<span class="company-location text-color-dark font-weight-normal text-uppercase">Tirana, Albania</span>
+												</span>
+                        </div>
+                        <div class="experience-description col-lg-9 col-sm-7 bg-color-light">
+                          <h4 class="text-color-dark font-weight-semibold">{{exp.role}}</h4>
+                          <p v-for="task in exp.tasks" class="custom-text-color-2" style="margin: 0 0 5px;">{{task}}</p>
+                        </div>
                       </div>
+                    </article>
+                    <div class="timeline-bar" style="top: 142.944px; bottom: 142.944px;"></div>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="education" class="section section-no-border custom-bg-color-1 m-0">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <h2 class="text-color-quaternary text-uppercase font-weight-extra-bold m-0">Education</h2>
+                <div class="owl-carousel nav-bottom custom-dots-style-1 mb-0" data-plugin-options="{'items': 1, 'loop': false, 'dots': true, 'nav': false}">
+                  <div class="row">
+                    <div v-for="educat in person.education" class="col-lg-6 col-sm-6 pb-4">
+                      <div class="custom-box-details-2 bg-color-light custom-box-shadow-3">
+                        <i class="icon-graduation icons text-color-primary"></i>
+                        <h4 class="font-weight-semibold text-color-dark m-0">{{ educat.degree }} in {{educat.area}}</h4>
+                        <h5 class="text-lg-4 mb-1 mt-2">{{educat.institution}}</h5>
+                        <strong class="text-color-primary">{{ educat.start }}-{{educat.end}}</strong>
+                      </div>
+                    </div>
+<!--                    <div class="col-lg-6 col-sm-6 pb-4">-->
+<!--                      <div class="custom-box-details-2 bg-color-light custom-box-shadow-3">-->
+<!--                        <i class="icon-graduation icons text-color-primary"></i>-->
+<!--                        <h4 class="font-weight-semibold text-color-dark m-0">{{educat.institution}}</h4>-->
+<!--                        <p class="custom-text-color-2 mb-1">Master of Information Technology</p>-->
+<!--                        <strong class="text-color-primary">2001-2020</strong>-->
+<!--                      </div>-->
+<!--                    </div>-->
+                  </div>
+<!--                  <div class="row">-->
+<!--                    <div class="col-lg-6 col-sm-6 pb-4">-->
+<!--                      <div class="custom-box-details-2 bg-color-light custom-box-shadow-3">-->
+<!--                        <i class="icon-graduation icons text-color-primary"></i>-->
+<!--                        <h4 class="font-weight-semibold text-color-dark m-0">Porto University</h4>-->
+<!--                        <p class="custom-text-color-2 mb-1">Master of Information Technology</p>-->
+<!--                        <strong class="text-color-primary">2001-2020</strong>-->
+<!--                      </div>-->
+<!--                    </div>-->
+<!--                    <div class="col-lg-6 col-sm-6 pb-4">-->
+<!--                      <div class="custom-box-details-2 bg-color-light custom-box-shadow-3">-->
+<!--                        <i class="icon-graduation icons text-color-primary"></i>-->
+<!--                        <h4 class="font-weight-semibold text-color-dark m-0">Porto University</h4>-->
+<!--                        <p class="custom-text-color-2 mb-1">Master of Information Technology</p>-->
+<!--                        <strong class="text-color-primary">2001-2020</strong>-->
+<!--                      </div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="skills" class="section section-no-border bg-color-light m-0">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-md-6 col-lg-8 mb-4 mb-md-0">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <h2 class="text-color-quaternary text-uppercase font-weight-extra-bold">Skills & Language</h2>
+                    <div class="progress-bars custom-progress-bars">
+                      <div v-for="(skill, index) in person.skills.professional" v-if="index<4">
+                        <div class="progress-label text-color-dark font-weight-semibold text-uppercase text-2">
+                          <span>{{skill.name}}</span>
+                        </div>
+
+                        <div class="progress mb-2">
+                          <div class="progress-bar" :data-appear-progress-animation="skill.percentage+'%'"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="progress-bars custom-progress-bars custom-md-margin-top-1">
+                      <div v-for="(skill, index) in person.skills.professional" v-if="index>=4">
+                        <div class="progress-label text-color-dark font-weight-semibold text-uppercase text-2">
+                          <span>{{skill.name}}</span>
+                        </div>
+
+                        <div class="progress mb-2">
+                          <div class="progress-bar" :data-appear-progress-animation="skill.percentage+'%'"></div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div class="row">
+                  <div class="col">
+                    <div class="custom-box-details bg-color-light custom-box-shadow-1">
+                      <h4 class="text-color-dark">Languages</h4>
+                      <ul class="custom-list-style-1 p-0">
+                        <li v-for="language in person.skills.languages">
+                          <span class="font-weight-semibold custom-max-width-1 text-color-dark">
+                            <img src="img/blank.gif" class="flag flag-us mr-1">
+                            {{ language.name }}:</span>
+                          <span class="custom-text-color-2">{{language.level}}</span>
+                        </li>
+                      </ul>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </section>
-          <!-- #SKILLS# -->
-          <section id="skills" class="section section-skills wow fadeInUp" data-wow-offset="40">
-            <div class="header-section">
-              <h2 class="h2-section">SKILLS</h2>
-            </div>
-            <div class="row text-left">
-              <div class="col-md-5">
-                <div class="professional-skills">
-                  <div class="title-skills">
-                    <h3>PROFESSIONAL SKILLS</h3>
-                  </div>
-                  <!-- single skill -->
-                  <div class="skill" v-for="skill in person.skills.professional">
-                    <div class="title-progress">
-                      <span class="skill-name">{{skill.name}}</span>
-                      <span class="skill-value">{{skill.percentage}}</span>
-                    </div>
-                    <div class="progress">
-                      <div class="progress-bar progress1" role="progressbar" :aria-valuenow="skill.percentage" aria-valuemin="0" aria-valuemax="100" :style="'width: '+skill.percentage+'%;'">
-                      </div>
-                    </div>
-                  </div>
-                  <!-- / single skill -->
-                </div>
-              </div>
-              <div class="col-md-7">
-                <div class="additional-skills">
-                  <div class="title-skills">
-                    <h3>ADDITIONAL SKILLS</h3>
-                  </div>
-                  <div class="circle-progress">
-                    <div class="row">
-                      <!-- single circle skill -->
-                      <div class="col-sm-4">
-                        <div class="circle">
-                          <div class="chart-percentage">
-                            <span>90%</span>
-                          </div>
-                          <div class="chart" data-percent="90">
-                            <!-- canvas -->
-                          </div>
-                          <div class="name-circle">
-                            <span>English</span>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- / single circle skill -->
-                      <!-- single circle skill -->
-                      <div class="col-sm-4">
-                        <div class="circle">
-                          <div class="chart-percentage">
-                            <span>70%</span>
-                          </div>
-                          <div class="chart" data-percent="70">
-                            <!-- canvas -->
-                          </div>
-                          <div class="name-circle">
-                            <span>Italian</span>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- / single circle skill -->
-                      <!-- single circle skill -->
-                      <div class="col-sm-4">
-                        <div class="circle">
-                          <div class="chart-percentage">
-                            <span>70%</span>
-                          </div>
-                          <div class="chart" data-percent="70">
-                            <!-- canvas -->
-                          </div>
-                          <div class="name-circle">Spanish<br>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- / single circle skill -->
-                    </div>
-                  </div>
+          </div>
+        </section>
 
-
-
-                  <div class="other-skills">
-                    <div class="row">
-                      <div v-for="skill in person.skills.additional" class="col-sm-6">
-                        <div class="other">
-                          <!-- single other skill -->
-                          <div  class="skill">
-                            <i class="fa fa-check-square-o" aria-hidden="true"></i>
-                            <span>{{skill}}</span>
-                          </div>
-                          <!-- / single other skill -->
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <!-- #EDUCATION# -->
-          <section id="education" class="section section-education wow fadeInUp" data-wow-offset="40">
-            <div class="header-section">
-              <h2 class="h2-section">EDUCATION</h2>
-            </div>
-            <div class="row text-left">
-              <education v-for="education in person.education" :education="education">
-              </education>
-              <div class="clearfix"></div>
-            </div>
-          </section>
-          <!-- #EXPERIENCE# -->
-
-          <experiencesAll :resumeExp="{experiences:person.experiences}">
-
-          </experiencesAll>
-
-          <!-- #PORTFOLIO# -->
-          <section id="portfolio" class="section section-portfolio wow fadeInUp" data-wow-offset="40">
-            <div class="header-section">
-              <h2 class="h2-section">PORTFOLIO</h2>
-            </div>
-
-            <!--<div class="filter-portfolio">
-                <ul>
-                    <li class="active filter" data-filter="all">All</li>
-                    <li class="filter" data-filter=".term1">Web Design</li>
-                    <li class="filter" data-filter=".term2">Photography</li>
-                    <li class="filter" data-filter=".term3">Development</li>
+        <section id="portfolio" class="section section-no-border bg-color-secondary m-0">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <h2 class="text-color-quaternary font-weight-extra-bold text-uppercase">Portfolio</h2>
+                <ul class="nav nav-pills sort-source custom-nav-sort mb-4" data-sort-id="portfolio" data-option-value=".websites">
+                  <li class="nav-item active" data-option-value="*"><a class="nav-link text-dark active" href="#">Show All</a></li>
+                  <li class="nav-item" data-option-value=".websites"><a class="nav-link text-dark" href="#">Websites</a></li>
+                  <li class="nav-item" data-option-value=".logos"><a class="nav-link text-dark" href="#">Logos</a></li>
+                  <li class="nav-item" data-option-value=".brands"><a class="nav-link text-dark" href="#">Brands</a></li>
                 </ul>
-            </div>-->
-
-            <div class="row">
-              <!-- single work -->
-              <portfolio v-for="port in person.portfolio" :resumePort="{port}"/>
-
-              <div class="clearfix"></div>
-            </div>
-          </section>
-
-
-          <!-- #INTERESTS# -->
-          <section id="interests" class="section section-interests wow fadeInUp" data-wow-offset="40">
-            <div class="header-section">
-              <h2 class="h2-section">INTERESTS</h2>
-            </div>
-            <div class="text-interests">
-
-            </div>
-            <!-- more icons for interests : https://www.iconfinder.com/ -->
-            <div class="swiper-container">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide" v-for="interest in person.interests">
-                  <div>
-                    <img :src="'images/interests/'+interest.logo" :alt="interest.name">
-                  </div>
-                  <h4 class="text-capitalize">{{interest.name}}</h4>
-                </div>
-
-              </div>
-            </div>
-          </section>
-
-          <section class="section section-contact-us wow fadeInUp">
-            <div class="header-section">
-              <h2 class="h2-section">GRAPH</h2>
-            </div>
-            <div class="row">
-              <div class="">
-                <div class="">
-                  <expChart style="height: 500px"/>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <!-- #CONTACT_ME# -->
-          <section id="contact-us" class="section section-contact-us wow fadeInUp" data-wow-offset="40">
-            <div class="header-section">
-              <h2 class="h2-section">CONTACT ME</h2>
-            </div>
-            <div class="row">
-              <div class="col-sm-7">
-                <div class="form-content">
-                  <h3>CONTACT ME</h3>
-                  <form id='contactForm' data-toggle='validator' method='post'><input type='hidden' name='form-name' value='contactForm' />
-                    <input type="text" id="name" placeholder="Name" required>
-                    <input type="email" id="email" placeholder="Email" required>
-                    <textarea id="message" placeholder="Message" required></textarea>
-                    <input type="submit" id="form-submit" value="SEND">
-                    <div id="msgSubmit" class="h3 text-center hidden"></div>
-                    <div class="clearfix"></div>
-                  </form>
-                </div>
-              </div>
-              <div class="col-sm-5">
-                <div class="info-content">
-                  <h3>KEEP IN TOUCH</h3>
-                  <div class="address">
-                    <span class="info-icon"><i class="fa fa-map-marker"></i></span>
-                    <span class="info-text">Tirana, Albania</span>
-                  </div>
-                  <div class="email"><span class="info-icon"><em class="fa fa-envelope"></em></span> <span class="info-text">92redon@gmail.com</span></div>
-                  <div class="telephone">
-                    <span class="info-icon"><i class="fa fa-phone"></i></span>
-                    <span class="info-text">+355 67 22 66 112</span>
-                  </div>
-                  <div class="website">
-                    <span class="info-icon"><i class="fa fa-link"></i></span>
-                    <span class="info-text"><a href="redon.al">redon.al</a></span>
+                <div class="sort-destination-loader sort-destination-loader-showing">
+                  <div class="row image-gallery sort-destination lightbox" data-sort-id="portfolio" data-plugin-options="{'delegate': 'a.lightbox-portfolio', 'type': 'image', 'gallery': {'enabled': true}}">
+                    <div  v-for="port in person.portfolio" class="col-12 col-sm-6 col-lg-3 isotope-item websites">
+                      <div class="image-gallery-item mb-4 pb-3">
+                        <a :href="'images/portfolio/'+port.image" class="lightbox-portfolio">
+												<span class="thumb-info custom-thumb-info-1">
+													<span class="thumb-info-wrapper">
+														<span class="thumb-info-plus"></span>
+														<img  :src="'images/portfolio/'+port.image" class="img-fluid" alt="">
+													</span>
+												</span>
+                        </a>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="social-links">
-              <ul>
-                <li><a href="https://www.facebook.com/redvenger"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="https://plus.google.com/117470767662553758748"><i class="fa fa-google-plus"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/redon-la%C3%A7aj-40188212b/"><i class="fa fa-linkedin"></i></a></li>
-                <li><a href="instagram.com/redonl"><i class="fa fa-instagram"></i></a></li>
+          </div>
+        </section>
 
-              </ul>
+<!--        <section id="recommendations" class="section section-no-border bg-color-primary m-0">-->
+<!--          <div class="container">-->
+<!--            <div class="row">-->
+<!--              <div class="col">-->
+<!--                <h2 class="text-color-quaternary font-weight-extra-bold text-uppercase">Recommendations</h2>-->
+<!--              </div>-->
+<!--              <div class="col-lg-12 p-0">-->
+<!--                <div class="owl-carousel custom-dots-style-1 custom-dots-color-1 custom-dots-position-1 mb-0" data-plugin-options="{'items': 1, 'autoHeight': true, 'loop': false, 'nav': false, 'dots': true}">-->
+<!--                  <div>-->
+<!--                    <div class="col">-->
+<!--                      <div class="testimonial custom-testimonial-style-1 testimonial-with-quotes mb-0">-->
+<!--                        <blockquote class="pb-2">-->
+<!--                          <p class="custom-text-color-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tincidunt nulla tortor, a imperdiet enim tristique nec. Nulla lobortis leo eget metus dapibus sodales. Sed placerat vitae dui vitae vehicula. Quisque in tincidunt ligula, nec dignissim arcu. Praesent aliquam velit vel libero dictum, non sollicitudin lectus mollis. Morbi sollicitudin auctor gravida.</p>-->
+<!--                        </blockquote>-->
+<!--                        <div class="testimonial-author float-left">-->
+<!--                          <p><strong class="text-uppercase">Bob Doe</strong><span class="custom-text-color-3">Director of Engineering</span></p>-->
+<!--                        </div>-->
+<!--                      </div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                  <div>-->
+<!--                    <div class="col">-->
+<!--                      <div class="testimonial custom-testimonial-style-1 testimonial-with-quotes mb-0">-->
+<!--                        <blockquote class="pb-2">-->
+<!--                          <p class="custom-text-color-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tincidunt nulla tortor, a imperdiet enim tristique nec. Nulla lobortis leo eget metus dapibus sodales. Sed placerat vitae dui vitae vehicula. Quisque in tincidunt ligula, nec dignissim arcu. Praesent aliquam velit vel libero dictum, non sollicitudin lectus mollis. Morbi sollicitudin auctor gravida.</p>-->
+<!--                        </blockquote>-->
+<!--                        <div class="testimonial-author float-left">-->
+<!--                          <p><strong class="text-uppercase">Bob Doe</strong><span class="custom-text-color-3">Director of Engineering</span></p>-->
+<!--                        </div>-->
+<!--                      </div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </section>-->
+
+<!--        <section id="blog" class="section section-no-border bg-color-light m-0">-->
+<!--          <div class="container">-->
+<!--            <div class="row">-->
+<!--              <div class="col">-->
+<!--                <h2 class="text-color-quaternary font-weight-extra-bold text-uppercase">My Blog</h2>-->
+
+<!--                <div class="row">-->
+<!--                  <div class="col-lg-6 mb-5 mb-lg-0">-->
+<!--                    <article class="thumb-info custom-thumb-info-2 custom-box-shadow-1 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="0" data-appear-animation-duration="1s">-->
+<!--                      <div class="thumb-info-wrapper">-->
+<!--                        <a href="#">-->
+<!--                          <img src="img/demos/resume/blog/blog-1.jpg" alt class="img-fluid" />-->
+<!--                        </a>-->
+<!--                      </div>-->
+<!--                      <div class="thumb-info-caption">-->
+<!--                        <div class="thumb-info-caption-text">-->
+<!--                          <h4 class="mb-2">-->
+<!--                            <a href="#" class="text-decoration-none text-color-dark font-weight-semibold">-->
+<!--                              Design Driven-->
+<!--                            </a>-->
+<!--                          </h4>-->
+<!--                          <p class="custom-text-color-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tincidunt nulla tortor, a imperdiet enim tristique nec. Nulla lobortis leo eget metus dapib...</p>-->
+<!--                        </div>-->
+<!--                        <hr class="solid m-0 mt-4 mb-2">-->
+<!--                        <div class="row justify-content-between">-->
+<!--                          <div class="col-auto custom-blog-post-date text-uppercase font-weight-semibold text-color-dark text-2">-->
+<!--                            July 12-2020-->
+<!--                          </div>-->
+<!--                          <div class="col-auto custom-blog-post-share text-uppercase font-weight-semibold text-color-dark text-2">-->
+<!--                            Share:-->
+<!--                            <ul class="mb-0">-->
+<!--                              <li>-->
+<!--                                <a class="item-facebook text-decoration-none text-uppercase" href="#" title="Share on Facebook">Facebook</a>-->
+<!--                              </li>-->
+<!--                              <li>-->
+<!--                                <a class="item-twitter text-decoration-none text-uppercase" href="#" title="Share on Twitter">Twitter</a>-->
+<!--                              </li>-->
+<!--                              <li>-->
+<!--                                <a class="item-google-plus text-decoration-none text-uppercase" href="#" title="Share on Google Plus">Google Plus</a>-->
+<!--                              </li>-->
+<!--                            </ul>-->
+<!--                          </div>-->
+<!--                        </div>-->
+<!--                      </div>-->
+<!--                    </article>-->
+<!--                  </div>-->
+<!--                  <div class="col-lg-6">-->
+<!--                    <article class="thumb-info custom-thumb-info-2 custom-box-shadow-1 appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="0" data-appear-animation-duration="1s">-->
+<!--                      <div class="thumb-info-wrapper">-->
+<!--                        <a href="#">-->
+<!--                          <img src="img/demos/resume/blog/blog-2.jpg" alt class="img-fluid" />-->
+<!--                        </a>-->
+<!--                      </div>-->
+<!--                      <div class="thumb-info-caption">-->
+<!--                        <div class="thumb-info-caption-text">-->
+<!--                          <h4 class="mb-2">-->
+<!--                            <a href="#" class="text-decoration-none text-color-dark font-weight-semibold">-->
+<!--                              UI, UX Concepts-->
+<!--                            </a>-->
+<!--                          </h4>-->
+<!--                          <p class="custom-text-color-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tincidunt nulla tortor, a imperdiet enim tristique...</p>-->
+<!--                        </div>-->
+<!--                        <hr class="solid m-0 mt-4 mb-2">-->
+<!--                        <div class="row justify-content-between">-->
+<!--                          <div class="col-auto custom-blog-post-date text-uppercase font-weight-semibold text-color-dark text-2">-->
+<!--                            July 12-2020-->
+<!--                          </div>-->
+<!--                          <div class="col-auto custom-blog-post-share text-uppercase font-weight-semibold text-color-dark text-2">-->
+<!--                            Share:-->
+<!--                            <ul class="mb-0">-->
+<!--                              <li>-->
+<!--                                <a class="item-facebook text-decoration-none text-uppercase" href="#" title="Share on Facebook">Facebook</a>-->
+<!--                              </li>-->
+<!--                              <li>-->
+<!--                                <a class="item-twitter text-decoration-none text-uppercase" href="#" title="Share on Twitter">Twitter</a>-->
+<!--                              </li>-->
+<!--                              <li>-->
+<!--                                <a class="item-google-plus text-decoration-none text-uppercase" href="#" title="Share on Google Plus">Google Plus</a>-->
+<!--                              </li>-->
+<!--                            </ul>-->
+<!--                          </div>-->
+<!--                        </div>-->
+<!--                      </div>-->
+<!--                    </article>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--              <div class="col-lg-12 col-sm-12 pt-4 mt-4 text-center">-->
+<!--                <a class="btn btn-primary btn-outline text-color-dark custom-btn-style-2 font-weight-bold custom-border-radius-1 text-uppercase">View All</a>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </section>-->
+
+        <div id="say-hello" class="container-fluid">
+          <div class="row">
+            <div class="col-lg-6 p-0">
+              <section class="section section-no-border bg-color-primary h-100 m-0">
+                <div class="row justify-content-end m-0">
+                  <div class="col-half-section col-half-section-right mr-3">
+
+                    <h2 class="text-color-quaternary text-uppercase font-weight-extra-bold">Say Hello</h2>
+                    <form class="contact-form custom-form-style" action="php/contact-form.php" method="post">
+                      <div class="contact-form-success alert alert-success d-none mt-4">
+                        <strong>Success!</strong> Your message has been sent to us.
+                      </div>
+                      <div class="contact-form-error alert alert-danger d-none mt-4">
+                        <strong>Error!</strong> There was an error sending your message.
+                        <span class="mail-error-message text-1 d-block"></span>
+                      </div>
+
+                      <div class="form-content">
+                        <div class="form-control-custom">
+                          <input type="text" class="form-control" name="name" placeholder="Your Name *" data-msg-required="This field is required." id="name" required="" />
+                        </div>
+                        <div class="form-control-custom">
+                          <input type="text" class="form-control" name="subject" placeholder="Subject *" data-msg-required="This field is required." id="subject" required="" />
+                        </div>
+                        <div class="form-control-custom">
+                          <textarea maxlength="5000" data-msg-required="Please enter your message." rows="10" class="form-control" name="message" placeholder="Message*" id="message" required="" aria-required="true"></textarea>
+                        </div>
+                        <input type="submit" class="btn btn-quaternary text-color-light text-uppercase font-weight-semibold outline-none custom-btn-style-2 custom-border-radius-1" value="Submit" />
+                      </div>
+                    </form>
+
+                  </div>
+                </div>
+              </section>
             </div>
-          </section>
+            <div class="col-lg-6 p-0">
+              <section class="section section-no-border h-100 m-0">
+                <div class="row m-0">
+                  <div class="col-half-section col-half-section-left ml-3">
+                    <a href="mailto:you@domain.com" class="text-decoration-none">
+										<span class="feature-box custom-feature-box align-items-center mb-4">
+											<span class="custom-feature-box-icon">
+												<i class="icon-envelope icons text-color-light"></i>
+											</span>
+											<span class="feature-box-info">
+												<span class="custom-label font-weight-semibold text-uppercase custom-text-color-1">Email</span>
+												<strong class="font-weight-light text-color-light custom-opacity-effect-1">92redon@gmail.com</strong>
+											</span>
+										</span>
+                    </a>
+                    <a href="tel:+1234657890" class="text-decoration-none">
+										<span class="feature-box custom-feature-box align-items-center mb-4">
+											<span class="custom-feature-box-icon">
+												<i class="icon-phone icons text-color-light"></i>
+											</span>
+											<span class="feature-box-info">
+												<span class="custom-label font-weight-semibold text-uppercase custom-text-color-1">Phone</span>
+												<strong class="font-weight-light text-color-light custom-opacity-effect-1">+355 67 22 66 112</strong>
+											</span>
+										</span>
+                    </a>
+                    <a href="skype:redon.lacaj?chat" class="text-decoration-none">
+										<span class="feature-box custom-feature-box align-items-center mb-4">
+											<span class="custom-feature-box-icon">
+												<i class="icon-social-skype icons text-color-light"></i>
+											</span>
+											<span class="feature-box-info">
+												<span class="custom-label font-weight-semibold text-uppercase custom-text-color-1">Skype</span>
+												<strong class="font-weight-light text-color-light custom-opacity-effect-1">redon.lacaj</strong>
+											</span>
+										</span>
+                    </a>
+                    <span class="feature-box custom-feature-box align-items-center">
+										<span class="custom-feature-box-icon">
+											<i class="icon-share icons text-color-light"></i>
+										</span>
+										<a href="http://www.facebook.com" class="d-flex text-decoration-none">
+											<span class="feature-box-info">
+												<span class="custom-label font-weight-semibold text-uppercase custom-text-color-1">Follow me</span>
+												<strong class="font-weight-light text-color-light custom-opacity-effect-1">Facebook</strong>
+											</span>
+										</a>
+<!--										<a href="http://www.twitter.com" class="d-flex text-decoration-none">-->
+<!--											<span class="feature-box-info custom-both-side-border mt-2">-->
+<!--												<strong class="font-weight-light text-color-light custom-opacity-effect-1">Twitter</strong>-->
+<!--											</span>-->
+<!--										</a>-->
+										<a href="http://www.linkedin.com/in/redonl" class="d-flex text-decoration-none">
+											<span class="feature-box-info p-0 mt-2">
+												<strong class="font-weight-light text-color-light custom-opacity-effect-1">Linkedin</strong>
+											</span>
+										</a>
+									</span>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
 
+        <footer id="footer" class="m-0 p-0">
+          <div class="footer-copyright bg-color-light m-0">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-12 m-0">
+                  <p class="custom-text-color-2">© Copyright 2020. All Rights Reserved.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+      </div>
+<!--      <div v-else>-->
+<!--      </div>-->
   </div>
+<!--  </div>-->
 </template>
 
 <script>
@@ -372,7 +656,9 @@
   import experiencesAll from '@/components/ExperiencesAll.vue';
   import portfolio from '@/components/Portfolio.vue';
   import expChart from '@/components/ExpChart.vue';
-  import education from '@/components/Education.vue';
+  import Education from '@/components/Education.vue';
+
+  import Typed from 'typed.js';
 
   export default {
     name: 'home',
@@ -380,21 +666,24 @@
       experiencesAll,
       portfolio,
       expChart,
-      education,
+      Education,
     },
     data(){
       return{
         loading:true,
         theme:false,
         person:{
-          name:'REDON LAÇAJ',
+          name:'Redon Lacaj',
           profession:'Web Developer',
+          current_job:'Rightsearch Gmbh',
           address:'Tirana, Albania',
           email:'92redon@gmail.com',
           phone:'+355 67 22 66 112',
           nationality:'Albanian',
+          marital:'Single',
           website:'redon.al',
           websiteUrl:'http://redon.lacaj.al',
+          birthdate:'10 September 1992',
           age:moment().diff('1992-09-10', 'years'),
           social:[
             {
@@ -415,7 +704,7 @@
               url:'https://www.instagram.com/redonl/'
             },
           ],
-          about:'Hello! I’m Redon Laçaj. I\'m a Web Developer with over 2 years of experience. ' +
+          about:'I\'m a Web Developer with over 3 years of experience. ' +
                   'I have an in-depth knowledge in PHP, HTML5, CSS3, JavaScript (Vue.js), MYSQL. ' +
                   'I currently work with Laravel and Wordpress, depending on the project. ' +
                   'I\'m also an electronic circuits designer, Arduino and ESP developer. I\'m a fast learner, ' +
@@ -423,28 +712,63 @@
           skills:{
             professional:[
               {
-                name:'HTML & CSS',
-                percentage:'80',
-              },{
                 name:'PHP',
                 percentage:'75',
               },{
                 name:'Laravel',
-                percentage:'60',
+                percentage:'75',
               },{
                 name:'Vue.js',
                 percentage:'40',
               },{
+                name:'React Native',
+                percentage:'40',
+              },{
+                name:'HTML & CSS',
+                percentage:'80',
+              },{
                 name:'Node.js',
-                percentage:'25',
+                percentage:'20',
               },{
                 name:'Photoshop',
-                percentage:'70',
+                percentage:'60',
               },
             ],
             additional:[
               'MySQL','RESTfull WS','Bootstrap','Graphical Design','Adobe Illustrator','Circuit Design (PCB)'
             ],
+            languages:[
+              {
+                name: 'Albanian',
+                level: 'Native',
+                flag:'al'
+              },
+              {
+                name: 'English',
+                level: 'C1 (IELTS)',
+                flag:'en'
+              },
+              {
+                name: 'Italian',
+                level: 'B1',
+                flag:'it'
+              },
+              {
+                name: 'Spanish',
+                level: 'B1',
+                flag:'es'
+              },
+              {
+                name: 'German',
+                level: 'A2',
+                flag:'de'
+              },
+              {
+                name: 'Turkish',
+                level: 'A2',
+                flag:'tr'
+              },
+            ]
           },
           education:[
             {
@@ -473,18 +797,19 @@
                 'Other courses: Database Management Systems, Networks Management, Digital Design, Computer Architecture.'
               ],
 
-            },{
-              start:'2007',
-              end:'2011',
-              institution:'Kolegji turk HRP',
-              area:'Gymnasium',
-              degree:'',
-              courses:[
-                'General gymnasium courses, including advanced english classes, turkish and german classes. ' +
-                '<br>All lessons were conducted in english language.'
-              ],
-
             },
+            // {
+            //   start:'2007',
+            //   end:'2011',
+            //   institution:'Kolegji turk HRP',
+            //   area:'Gymnasium',
+            //   degree:'',
+            //   courses:[
+            //     'General gymnasium courses, including advanced english classes, turkish and german classes. ' +
+            //     '<br>All lessons were conducted in english language.'
+            //   ],
+            //
+            // },
           ],
           experiences:[
             {
@@ -531,7 +856,6 @@
                 '-Modifying the supplied android app to adapt with our project.',
                 '-Database management.',
                 '-Camera security system installation.',
-                '-Support.'
               ]
             },{
               start:'Nov 2016',
@@ -647,13 +971,46 @@
             }
           ]
         },
-
-
+        typed:'',
       }
     },
-    mounted(){
+    created(){
+
       // if (document.readyState === "complete") {
-      this.loading=false;
+      // this.loading=false;
+
+
+      if (this.loading) {
+        new Typed('#loaderTyped', {
+          strings: [
+            'npm install redon_resume^1000\n `installing resume...` ^1000\n `Fetching from experience...`'
+            // 'FullStack web developer', 'React Native developer', 'Software engineer'
+          ],
+          typeSpeed:10,
+          backSpeed:5,
+          showCursor:false,
+          loop:true,
+          smartBackspace: true, // this is a default
+          // onComplete: (self) => {this.loading=false},
+        });
+      }
+      else {
+        new Typed('#typed',{
+              strings: [
+                // 'npm install^1000\n `installing components...` ^1000\n `Fetching from source...`'
+                'FullStack web developer', 'React Native developer', 'Software engineer'
+              ],
+              typeSpeed:20,
+              backSpeed:10,
+              showCursor:false,
+              loop:true,
+              smartBackspace: true, // this is a default
+              // onComplete: (self) => {this.loading=false},
+            }
+        );
+      }
+
+      // this.loading=false;
       // }
     },
     methods:{
