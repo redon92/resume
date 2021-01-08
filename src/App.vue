@@ -140,7 +140,7 @@
                 </a>
               </div>
               <div class="col-lg-3 text-center p-0">
-                <a href="cv/Redon_Lacaj_cv_june.pdf" class="text-decoration-none">
+                <a href="cv/Redon_Lacaj_cv_jan_21.pdf" class="text-decoration-none">
 								<span class="custom-nav-button text-color-dark">
 									<i class="icon-cloud-download icons text-color-primary"></i>
 									Download Resume
