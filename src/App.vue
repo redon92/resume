@@ -361,15 +361,15 @@
             <div class="row">
               <div class="col">
                 <h2 class="text-color-quaternary font-weight-extra-bold text-uppercase">Portfolio</h2>
-                <ul class="nav nav-pills sort-source custom-nav-sort mb-4" data-sort-id="portfolio" data-option-value=".websites">
+                <ul class="nav nav-pills sort-source custom-nav-sort mb-4" data-sort-id="portfolio" data-option-value=".laravel">
                   <li class="nav-item active" data-option-value="*"><a class="nav-link text-dark active" href="#">Show All</a></li>
-                  <li class="nav-item" data-option-value=".websites"><a class="nav-link text-dark" href="#">Websites</a></li>
-                  <li class="nav-item" data-option-value=".logos"><a class="nav-link text-dark" href="#">Logos</a></li>
-                  <li class="nav-item" data-option-value=".brands"><a class="nav-link text-dark" href="#">Brands</a></li>
+                  <li class="nav-item" data-option-value=".laravel"><a class="nav-link text-dark" href="#">Laravel</a></li>
+                  <li class="nav-item" data-option-value=".wordpress"><a class="nav-link text-dark" href="#">Wordpress</a></li>
+                  <li class="nav-item" data-option-value=".react_native"><a class="nav-link text-dark" href="#">React Native</a></li>
                 </ul>
                 <div class="sort-destination-loader sort-destination-loader-showing">
                   <div class="row image-gallery sort-destination lightbox" data-sort-id="portfolio" data-plugin-options="{'delegate': 'a.lightbox-portfolio', 'type': 'image', 'gallery': {'enabled': true}}">
-                    <div  v-for="port in person.portfolio" class="col-12 col-sm-6 col-lg-3 isotope-item websites">
+                    <div  v-for="port in person.portfolio" :class="'col-12 col-sm-6 col-lg-3 isotope-item ' + port.category">
                       <div class="image-gallery-item mb-4 pb-3">
                         <a :href="'images/portfolio/'+port.image" class="lightbox-portfolio">
 												<span class="thumb-info custom-thumb-info-1">
@@ -923,53 +923,75 @@
           ],
           portfolio:[
             {
+              name:'PonyPony mobile app',
+              url:'',
+              image:'ponypony_app.jpg',
+              logo:'ponypony_dashboard_logo.png',
+              category:'react_native'
+            },
+            {
+              name:'PonyPony dashboard',
+              url:'https://dashboard.ponypony.it',
+              image:'ponypony_dashboard.png',
+              logo:'ponypony_dashboard_logo.png',
+              category:'laravel'
+            },
+            {
+              name:'EspertoLavoro',
+              url:'',
+              image:'espertolavoro.png',
+              logo:'espertolavoro_logo.png',
+              category:'laravel'
+            },
+            {
               name:'Alpha Construction Team',
               url:'http://alphaconstructionteam.com',
               image:'alpha.jpg',
               logo:'alpha_logo.png',
+              category:'laravel'
 
             },{
               name:'Selca Cem',
               url:'http://selcacem.al',
               image:'selca.jpg',
               logo:'selca_logo.png',
-
+              category:'wordpress'
             },{
               name:'ZigZag (Coming soon)',
               url:'http://zigzag.al',
               image:'zigzag.jpg',
               logo:'zigzag_logo.png',
-
+              category:'wordpress'
             },{
               name:'2 Vellezerit Hoxha',
               url:'http://2vellezerithoxha.com',
               image:'2vhoxha.jpg',
               logo:'2vhoxha_logo.png',
-
+              category:'laravel'
             },{
               name:'Agrarja Anxhelo',
               url:'http://agrarjaanxheloshpk.al',
               image:'agrarja.jpg',
               logo:'agrarja_logo.jpg',
-
+              category:'wordpress'
             },{
               name:'NRD Sh.P.K.',
               url:'http://nrdshpk.al',
               image:'nrd.jpg',
               logo:'nrd_logo.png',
-
+              category:'wordpress'
             },{
               name:'Momenti.al',
               url:'http://momenti.al',
               image:'momenti.jpg',
               logo:'momenti_logo.jpg',
-
+              category:'wordpress'
             },{
               name:'Uaibo.com',
               url:'http://uaibo.com',
               image:'uaibo.jpg',
               logo:'uaibo_logo.png',
-
+              category:'wordpress'
             },
           ],
           interests:[
