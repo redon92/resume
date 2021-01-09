@@ -70,7 +70,7 @@
                       </nav>
                     </div>
                     <button class="btn header-btn-collapse-nav" data-toggle="collapse" data-target=".header-nav-main nav">
-                      <i class="fas fa-bars"></i>
+                      <i class="icon-menu icons"></i>
                     </button>
                   </div>
                 </div>
@@ -89,9 +89,9 @@
                 <img src="images/redon_medium.jpg" class="img-fluid custom-border custom-image-position-2 custom-box-shadow-4" alt />
               </div>
               <div class="col-lg-7 col-xl-7">
-                <h1 class="" style="font-size: 50px">Hi I'm</h1>
+                <h1 class="hi_im" style="font-size: 50px">Hi I'm</h1>
                 <h1 class=" custom-font-size-1">{{person.name}}</h1>
-                <p style="min-height: 30px;" class="mt-4"> <span class="font-weight-normal text-lg-6 custom-margin-bottom-1 pt-3" style="color: #777;line-height: 26px;margin: 0 0 20px; font-family: 'Open Sans', Arial, sans-serif;" id="typed"></span>
+                <p style="min-height: 30px;" class="mt-4"> <span class="typedText font-weight-normal text-lg-6 custom-margin-bottom-1 pt-3" id="typed"></span>
                 </p>
 
                 <span class="custom-about-me-infos">
@@ -196,17 +196,17 @@
 
                 <h2 class="text-color-quaternary font-weight-extra-bold text-uppercase">About Me</h2>
 
-                <p class="custom-text-color-2">{{ person.about}}</p>
+                <p class="custom-text-color-2 about_me">{{ person.about}}</p>
 
-                <div class="about-me-more" id="aboutMeMore">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tincidunt nulla tortor, a imperdiet enim tristique nec. Nulla lobortis leo eget metus dapibus sodales. Sed placerat vitae dui vitae vehicula. Quisque in tincidunt ligula, nec dignissim arcu. Praesent aliquam velit vel libero dictum, non sollicitudin lectus mollis. Morbi sollicitudin auctor gravida. Vivamus vitae dui non lorem euismod pretium. Morbi congue sem sed ex iaculis, nec mattis felis pretium. Nullam molestie libero id odio blandit sodales. Suspendisse non mauris et felis molestie placerat aliquet a risus. Aliquam ac leo tempus, hendrerit eros mollis, gravida est.</p>
+<!--                <div class="about-me-more" id="aboutMeMore">-->
+<!--                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tincidunt nulla tortor, a imperdiet enim tristique nec. Nulla lobortis leo eget metus dapibus sodales. Sed placerat vitae dui vitae vehicula. Quisque in tincidunt ligula, nec dignissim arcu. Praesent aliquam velit vel libero dictum, non sollicitudin lectus mollis. Morbi sollicitudin auctor gravida. Vivamus vitae dui non lorem euismod pretium. Morbi congue sem sed ex iaculis, nec mattis felis pretium. Nullam molestie libero id odio blandit sodales. Suspendisse non mauris et felis molestie placerat aliquet a risus. Aliquam ac leo tempus, hendrerit eros mollis, gravida est.</p>-->
 
-                  <p>Proin euismod ipsum a tellus condimentum dapibus. Integer porttitor felis elit, eget rutrum ligula commodo quis. Praesent ultricies neque eu mi congue blandit. Nulla feugiat feugiat aliquet. Morbi sed mattis erat. Nullam scelerisque molestie eros, id tristique felis iaculis non. Duis pellentesque neque eget iaculis varius. Donec at nisl semper, aliquam est id, tincidunt lacus. Donec at erat purus.</p>
+<!--                  <p>Proin euismod ipsum a tellus condimentum dapibus. Integer porttitor felis elit, eget rutrum ligula commodo quis. Praesent ultricies neque eu mi congue blandit. Nulla feugiat feugiat aliquet. Morbi sed mattis erat. Nullam scelerisque molestie eros, id tristique felis iaculis non. Duis pellentesque neque eget iaculis varius. Donec at nisl semper, aliquam est id, tincidunt lacus. Donec at erat purus.</p>-->
 
-                  <p>Morbi tincidunt nunc non diam porta, at fermentum orci bibendum. Donec arcu nisi, ornare nec commodo vitae, sollicitudin sed magna. Cras sit amet justo et nulla pulvinar laoreet. Phasellus scelerisque, metus id posuere vulputate, diam tellus iaculis sapien, eget scelerisque ipsum libero convallis velit. Duis lorem ligula, faucibus quis tellus nec, fringilla ultricies leo. Etiam tempus congue magna. Suspendisse porta dictum tortor, eu volutpat ipsum eleifend nec. Aliquam dapibus lorem luctus, cursus libero imperdiet, mattis nunc. Sed in ipsum diam. Quisque efficitur metus purus, vitae fermentum lacus venenatis id.</p>
-                </div>
+<!--                  <p>Morbi tincidunt nunc non diam porta, at fermentum orci bibendum. Donec arcu nisi, ornare nec commodo vitae, sollicitudin sed magna. Cras sit amet justo et nulla pulvinar laoreet. Phasellus scelerisque, metus id posuere vulputate, diam tellus iaculis sapien, eget scelerisque ipsum libero convallis velit. Duis lorem ligula, faucibus quis tellus nec, fringilla ultricies leo. Etiam tempus congue magna. Suspendisse porta dictum tortor, eu volutpat ipsum eleifend nec. Aliquam dapibus lorem luctus, cursus libero imperdiet, mattis nunc. Sed in ipsum diam. Quisque efficitur metus purus, vitae fermentum lacus venenatis id.</p>-->
+<!--                </div>-->
 
-                <a id="aboutMeMoreBtn" class="btn btn-tertiary text-uppercase custom-btn-style-1 text-1" href="#">View More</a>
+<!--                <a id="aboutMeMoreBtn" class="btn btn-tertiary text-uppercase custom-btn-style-1 text-1" href="#">View More</a>-->
 
               </div>
             </div>
@@ -240,7 +240,7 @@
                         </div>
                         <div class="experience-description col-lg-9 col-sm-7 bg-color-light">
                           <h4 class="text-color-dark font-weight-semibold">{{exp.role}}</h4>
-                          <p v-for="task in exp.tasks" class="custom-text-color-2" style="margin: 0 0 5px;">{{task}}</p>
+                          <p v-for="task in exp.tasks" class="custom-text-color-2 expTasks">{{task}}</p>
                         </div>
                       </div>
                     </article>
@@ -374,7 +374,9 @@
                         <a :href="'images/portfolio/'+port.image" class="lightbox-portfolio">
 												<span class="thumb-info custom-thumb-info-1">
 													<span class="thumb-info-wrapper">
-														<span class="thumb-info-plus"></span>
+														<span class="thumb-info-plus">
+                              <img  :src="'images/portfolio/'+port.logo" class="img-fluid" alt="">
+                            </span>
 														<img  :src="'images/portfolio/'+port.image" class="img-fluid" alt="">
 													</span>
 												</span>
@@ -813,9 +815,30 @@
           ],
           experiences:[
             {
-              start:'Feb 2019',
+              start:'May 2020',
               end:'Current',
-              role:'Web Developer FS',
+              role:'Full-Stack Web Developer',
+              company:'Bei Rightsearch',
+              tasks:[
+                '- Web development with CakePHP v3.8 and v4',
+                '- Laravel web development, Vue.js',
+                '- CakePHP Plugins creation'
+              ]
+            },
+            {
+              start:'Jan 2020',
+              end:'May 2020',
+              role:'Full-Stack Web Developer',
+              company:'Arkevo Design',
+              tasks:[
+                '- Trading website for clients with multiple permissions, integrated with metatrader 4 api through restful api, in-site VoIP calls with sipML5, online payments. Using: Laravel v.6.18.3, PHP v.7.3.2, Vue.js v.~2.6',
+                '- Leads CRM, with VoIP calls using simML5, using PHP.'
+              ]
+            },
+            {
+              start:'Feb 2019',
+              end:'Jan 2020',
+              role:'Full-Stack Web Developer',
               company:'Angel1',
               tasks:[
                 '-Laravel web development',
@@ -827,7 +850,7 @@
             {
               start:'Mar 2018',
               end:'Sep 2018',
-              role:'Web Developer FS',
+              role:'Full-Stack Web Developer',
               company:'CCL Albania',
               tasks:[
                 '-Laravel web development',
@@ -974,27 +997,27 @@
         typed:'',
       }
     },
-    created(){
+    mounted(){
 
       // if (document.readyState === "complete") {
-      // this.loading=false;
+      this.loading=false;
 
-
-      if (this.loading) {
-        new Typed('#loaderTyped', {
-          strings: [
-            'npm install redon_resume^1000\n `installing resume...` ^1000\n `Fetching from experience...`'
-            // 'FullStack web developer', 'React Native developer', 'Software engineer'
-          ],
-          typeSpeed:10,
-          backSpeed:5,
-          showCursor:false,
-          loop:true,
-          smartBackspace: true, // this is a default
-          // onComplete: (self) => {this.loading=false},
-        });
-      }
-      else {
+      //
+      // if (this.loading) {
+      //   new Typed('#loaderTyped', {
+      //     strings: [
+      //       'npm install redon_resume^1000\n `installing resume...` ^1000\n `Fetching from experience...`'
+      //       // 'FullStack web developer', 'React Native developer', 'Software engineer'
+      //     ],
+      //     typeSpeed:10,
+      //     backSpeed:5,
+      //     showCursor:false,
+      //     loop:true,
+      //     smartBackspace: true, // this is a default
+      //     // onComplete: (self) => {this.loading=false},
+      //   });
+      // }
+      // else {
         new Typed('#typed',{
               strings: [
                 // 'npm install^1000\n `installing components...` ^1000\n `Fetching from source...`'
@@ -1008,7 +1031,7 @@
               // onComplete: (self) => {this.loading=false},
             }
         );
-      }
+      // }
 
       // this.loading=false;
       // }

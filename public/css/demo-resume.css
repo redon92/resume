@@ -299,7 +299,7 @@ section.section {
 	#header.header-floating-icons {
 		position: absolute;
 		top: 60px;
-		right: 0px;
+		right: 77px;
 	}
 	#header.header-floating-icons .header-body {
 		background: transparent;
@@ -360,8 +360,21 @@ section.section {
 
 @media (max-width: 767px) {
 	.custom-about-me-infos span {
-		font-size: 0.9em;
+		font-size: 1.2em;
 	}
+	.about_me {
+		font-size: 1.2em;
+	}
+
+	.expTasks {
+		font-size:1.2em;
+		margin: 0 0 5px;
+	}
+
+}
+.expTasks {
+	/*font-size:1.2em; */
+	margin: 0 0 5px;
 }
 .custom-about-me-links {
 	position: relative;
@@ -435,6 +448,22 @@ section.section {
 		float: none !important;
 		margin-left: 0 !important;
 	}
+	.hi_im {
+		display: none;
+	}
+	.myName {
+		font-size: 45px;
+	}
+	.typedText {
+		font-size: 25px !important;
+	}
+}
+
+.typedText{
+	color: #777;
+	line-height: 26px;
+	margin: 0 0 20px;
+	font-family: 'Open Sans', Arial, sans-serif;
 }
 
 .custom-list-style-1 {
@@ -613,6 +642,9 @@ section.custom-timeline .timeline-box .experience-info .company > span {
 	section.custom-timeline .timeline-box:before, section.custom-timeline .timeline-box:after {
 		display: none !important;
 	}
+	section.custom-timeline .timeline-box .experience-info, section.custom-timeline .timeline-box .experience-description {
+		padding: 40px;
+	}
 }
 @media (max-width: 575px) {
 	section.custom-timeline {
@@ -719,10 +751,10 @@ section.custom-timeline .timeline-box .experience-info .company > span {
 	background: #FDD55C;
 }
 .custom-thumb-info-1 .thumb-info-wrapper .thumb-info-plus {
-	opacity: 0;
+	opacity: 1;
 	position: absolute;
-	width: 10%;
-	top: 50%;
+	width: 50%;
+	top: 135px;
 	left: 50%;
 	z-index: 2;
 	transform: translate(-50%, -50%);
@@ -735,7 +767,7 @@ section.custom-timeline .timeline-box .experience-info .company > span {
 	width: 100%;
 	top: 50%;
 	left: 50%;
-	border-top: 1px solid #1e1e1e;
+	/*border-top: 1px solid #1e1e1e;*/
 	transform: translate(-50%, -50%);
 }
 .custom-thumb-info-1 .thumb-info-wrapper .thumb-info-plus:after {
